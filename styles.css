@@ -70,7 +70,7 @@ body {
     line-height: 1.43;
     color: #222;
     background-color: #fff;
-    margin: 0px 50px 0px 50px;
+    margin: 0px 0px 0px 0px;
     display: grid;
     grid-template-columns: 100%;
 }
@@ -78,6 +78,7 @@ body {
 #search {
     display: grid;
     grid-template-columns: 87% 13%;
+    margin: 0px 50px 0px 50px;
 }
 
 .searchbutton {
@@ -104,7 +105,7 @@ body {
 .searchtext {
     grid-column-start: 2;
     grid-column-end: 3;
-    margin: 3px 0px 0px 40px;
+    margin: 3px 0px 0px 50px;
     text-align: left;
     line-height: 55%;
 }
@@ -131,13 +132,19 @@ body {
 .filtersbutton {
     grid-column-start: 2;
     grid-column-end: 3;
-    height: 89px;
-    width: 89px;
+    height: 90px;
+    width: 90px;
     background-color: #fff;
     color: #222;
-    border: 2px solid rgb(160, 160, 160);
+    border: 2px solid rgb(165, 165, 165);
     border-radius: 50%;
-    margin: 55px 0px 25px 22px;
+    margin: 55px 0px 25px 25px;
+}
+
+#propertytabs {
+    display: grid;
+    grid-template-columns: 100%;
+    box-shadow: 0 10px 8px -4px rgba(50, 50, 50, 0.08);
 }
 
 .scrollmenu {
@@ -145,7 +152,7 @@ body {
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
-    margin: 0px 0px 20px 0px;
+    margin: 0px 50px 20px 0px;
     -webkit-overflow-scrolling: touch;
 }
 
@@ -155,10 +162,16 @@ body {
 
 .scrollmenu a {
     display: inline-block;
-    color: #222;
     text-align: center;
     text-decoration: none;
-    padding: 14px 45px 0px 45px;
+    color: #222;
+    padding: 14px 45px 10px 45px;
     font-weight: 600;
     font-size: 27px;
+}
+
+.selectedproperty {
+    background:linear-gradient(#222,#222) bottom no-repeat;
+    background-size:47% 4px;
+    padding-bottom: 15px;
 }
