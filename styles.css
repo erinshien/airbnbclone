@@ -179,7 +179,7 @@ body {
 #propertycards {
     display: grid;
     grid-template-columns: 100%;
-    margin: 55px 55px 0px 55px;
+    margin: 55px 55px 55px 55px;
 }
 
 .propertycard img {
@@ -265,4 +265,20 @@ body {
 .propertyprice {
     font-size: 36px;
     color: #222;
+}
+
+h3 {
+    font-size: 42px;
+    color: #222;
+    text-align: center;
+}
+
+.showmore {
+    margin: auto;
+    height: 110px;
+    width: 300px;
+    background-color: #222;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 36px;
 }
