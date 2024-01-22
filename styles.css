@@ -179,7 +179,7 @@ body {
 #propertycards {
     display: grid;
     grid-template-columns: 100%;
-    margin: 0px 50px 0px 50px;
+    margin: 55px 50px 0px 50px;
 }
 
 .propertycard img {
@@ -203,12 +203,22 @@ body {
     border-radius: 75px;
     box-shadow: 0px 7px 18px 8px rgba(50, 50, 50, 0.15);
     padding: 1px 3px;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 32px;
     font-stretch: semi-expanded;
     position: absolute;
-    top: 65px;
+    top: 30px;
     left: 30px;
     pointer-events: none;
 }
 
+.favouriteheart {
+    background-color: transparent;
+    height: 50px;
+    width: 50px;
+    border-style: none;
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    pointer-events: none;
+}
