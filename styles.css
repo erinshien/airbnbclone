@@ -346,6 +346,10 @@ h2 {
     pointer-events: none;
 }
 
+#futuregetaways {
+    background-color: rgba(247, 247, 247);
+}
+
 #futuregetaways hr {
     margin-left: 50px;
     margin-right: 50px;
@@ -354,11 +358,11 @@ h2 {
 }
 
 .locationlinks {
-    list-style-type: none;
     display: grid;
     grid-template-columns: 50% 50%;
-    padding: 55px 15px 60px 55px;
+    padding: 55px 15px 70px 55px;
     line-height: 0.4;
+    background-color: rgba(247, 247, 247);
 }
 
 .locationtitle {
@@ -402,4 +406,27 @@ h2 {
 hr {
     background-color: rgba(247, 247, 247);
     border-top: 1.5px solid rgb(215, 215, 215);
+    margin: 0;
+    padding: 0;
+}
+
+#supporthostingairbnb {
+    background-color: rgba(247, 247, 247);
+    padding: 40px 55px 40px 55px;
+}
+
+.linksheading {
+    font-family: 'AirbnbCereal';
+    font-weight: 600;
+    font-size: 14px;
+    color: #222;
+    margin-top: 50px;
+}
+
+.links a {
+    font-family: 'AirbnbCereal', light;
+    font-size: 14px;
+    color: #222;
+    line-height: 2.25;
+    margin-bottom: 50px;
 }
