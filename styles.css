@@ -75,6 +75,10 @@ body {
     grid-template-columns: 100%;
 }
 
+a {
+    text-decoration: none;
+}
+
 #search {
     display: grid;
     grid-template-columns: 87% 13%;
@@ -289,12 +293,12 @@ h3 {
 }
 
 h2 {
-    font-size: 42px;
+    font-size: 48px;
     font-weight: 600;
     color: #222;
     text-align: left;
-    padding-top: 95px;
-    margin: 55px 50px 45px 50px;
+    padding-top: 105px;
+    margin: 55px 50px 35px 50px;
 }
 
 .scrollmenu2 {
@@ -349,3 +353,53 @@ h2 {
     border-top: 1.5px solid rgb(215, 215, 215);
 }
 
+.locationlinks {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 55px 15px 60px 55px;
+    line-height: 0.4;
+}
+
+.locationtitle {
+    font-family: 'AirbnbCereal';
+    font-weight: 600;
+    font-size: 32px;
+    text-decoration: none;
+    color: #222;
+}
+
+.rentaltype {
+    font-family: 'AirbnbCereal', light;
+    font-size: 32px;
+    text-decoration: none;
+    color: rgba(113, 113, 113);
+    padding-bottom: 17px;
+}
+
+.showmore2 {
+    border: none;
+    background-color: transparent;
+    font-family: 'AirbnbCereal';
+    font-weight: 600;
+    font-size: 32px;
+    color: #222;
+    text-align: left;
+    margin-left: -8px;
+    margin-top: -65px;
+    position: relative;
+}
+
+.locationlinks svg {
+    background-color: transparent;
+    border-style: none;
+    position: absolute;
+    top: 30px;
+    right: 55px;
+    pointer-events: none;
+}
+
+hr {
+    background-color: rgba(247, 247, 247);
+    border-top: 1.5px solid rgb(215, 215, 215);
+}
