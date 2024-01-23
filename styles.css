@@ -172,7 +172,7 @@ body {
 
 .selectedproperty {
     background:linear-gradient(#222,#222) bottom no-repeat;
-    background-size:46% 4.5px;
+    background-size: 46% 4.5px;
     padding-bottom: 15px;
 }
 
@@ -285,11 +285,67 @@ h3 {
 
 #futuregetaways {
     background-color: rgba(247, 247, 247);
+    position: relative;
 }
 
 h2 {
     font-size: 42px;
+    font-weight: 600;
     color: #222;
     text-align: left;
-    margin: 55px 50px 55px 50px;
+    padding-top: 95px;
+    margin: 55px 50px 45px 50px;
 }
+
+.scrollmenu2 {
+    background-color: rgba(247, 247, 247);
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    margin: 0px 55px 20px 16px;
+    -webkit-overflow-scrolling: touch;
+}
+
+.scrollmenu2::-webkit-scrollbar {
+    display: none;
+}
+
+#selectedlink {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: #222;
+    padding: 14px 35px 5px 35px;
+    font-weight: 600;
+    font-size: 32px;
+    background:linear-gradient(#222,#222) bottom no-repeat;
+    background-size: 63% 4.5px;
+    padding-bottom: 15px;
+}
+
+.scrollmenu2 a {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: rgba(113, 113, 113);
+    padding: 14px 35px 5px 35px;
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.nextarrow {
+    background-color: transparent;
+    border-style: none;
+    position: absolute;
+    top: 30px;
+    right: 55px;
+    pointer-events: none;
+}
+
+#futuregetaways hr {
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: rgba(247, 247, 247);
+    border-top: 1.5px solid rgb(215, 215, 215);
+}
+
