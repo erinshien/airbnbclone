@@ -78,7 +78,7 @@ body {
 #search {
     display: grid;
     grid-template-columns: 87% 13%;
-    margin: 0px 50px 0px 50px;
+    margin: 0px 55px 0px 55px;
 }
 
 .searchbutton {
@@ -152,7 +152,7 @@ body {
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
-    margin: 0px 50px 20px 0px;
+    margin: 0px 55px 30px 12px;
     -webkit-overflow-scrolling: touch;
 }
 
@@ -172,6 +172,97 @@ body {
 
 .selectedproperty {
     background:linear-gradient(#222,#222) bottom no-repeat;
-    background-size:47% 4px;
+    background-size:46% 4.5px;
     padding-bottom: 15px;
+}
+
+#propertycards {
+    display: grid;
+    grid-template-columns: 100%;
+    margin: 55px 55px 0px 55px;
+}
+
+.propertycard img {
+    min-width: 865px;
+    max-width: 865px;
+    min-height: 865px;
+    max-height: 865px;
+    object-fit: cover;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+
+.propertycard {
+    position: relative;
+    margin-bottom: 125px;
+}
+
+.guestfavourite {
+    background-color: #fff;
+    color: #222;
+    height: 68px;
+    width: 300px;
+    border-style: none;
+    border-radius: 75px;
+    box-shadow: 0px 7px 18px 8px rgba(50, 50, 50, 0.15);
+    padding: 1px 3px;
+    font-weight: 600;
+    font-size: 32px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    pointer-events: none;
+}
+
+.favouriteheart {
+    background-color: transparent;
+    height: 50px;
+    width: 50px;
+    border-style: none;
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    pointer-events: none;
+}
+
+.propertycardcontainer {
+    margin: 15px 0 0 0;
+    line-height: 0.5;
+}
+
+.propertycardheading {
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+.propertyheading {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    font-family: 'AirbnbCereal', medium;
+    font-size: 36px;
+    text-align: left;
+    color: #222;
+    margin-top: 6px;
+    margin-bottom: 0px;
+}
+
+.rating {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: inline-block;
+    font-size: 36px;
+    text-align: right;
+}
+
+.propertyinfo {
+    font-family: 'AirbnbCereal', light;
+    font-size: 34px;
+    color: rgba(113, 113, 113);
+    margin-top: 25px;
+    line-height: 0.4;
+}
+
+.propertyprice {
+    font-size: 36px;
+    color: #222;
 }
