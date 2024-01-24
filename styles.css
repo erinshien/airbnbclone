@@ -62,6 +62,21 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
         box-sizing: border-box;
+    scroll-padding-top: 500px;
+}
+
+html {
+    --top-spacing: 335px;
+    scroll-padding-top: var(--top-spacing);
+}
+
+header.fixed {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    z-index: 10;
 }
 
 body {
@@ -70,7 +85,7 @@ body {
     line-height: 1.43;
     color: #222;
     background-color: #fff;
-    margin: 0px 0px 0px 0px;
+    margin: var(--top-spacing) auto;
     display: grid;
     grid-template-columns: 100%;
 }
@@ -156,7 +171,7 @@ a {
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
-    margin: 0px 55px 30px 12px;
+    padding: 0px 55px 30px 12px;
     -webkit-overflow-scrolling: touch;
 }
 
@@ -177,7 +192,16 @@ a {
 .selectedproperty {
     background:linear-gradient(#222,#222) bottom no-repeat;
     background-size: 46% 4.5px;
-    padding-bottom: 15px;
+    padding-bottom: 46px;
+}
+
+.notselectedproperty a {
+    color: rgba(113, 113, 113);
+}
+
+.notselectedproperty img{
+    filter: invert(40%);
+    -webkit-filter: invert(40%);
 }
 
 #propertycards {
@@ -193,12 +217,12 @@ a {
     max-height: 830px;
     object-fit: cover;
     border-radius: 30px;
-    margin-bottom: 10px;
 }
 
 .propertycard {
     position: relative;
-    margin-bottom: 125px;
+    margin-bottom: 85px;
+    line-height: 2;
 }
 
 .guestfavourite {
@@ -248,6 +272,8 @@ a {
     color: #222;
     margin-top: 6px;
     margin-bottom: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .rating {
@@ -267,8 +293,12 @@ a {
 }
 
 .propertyprice {
+    font-weight: 500;
     font-size: 36px;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
     color: #222;
+    line-height: 1.25;
 }
 
 h3 {
@@ -306,7 +336,7 @@ h2 {
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
-    margin: 0px 55px 20px 16px;
+    padding: 0px 55px 0px 16px;
     -webkit-overflow-scrolling: touch;
 }
 
@@ -319,12 +349,11 @@ h2 {
     text-align: center;
     text-decoration: none;
     color: #222;
-    padding: 14px 35px 5px 35px;
+    padding: 14px 35px 30px 35px;
     font-weight: 600;
     font-size: 32px;
     background:linear-gradient(#222,#222) bottom no-repeat;
     background-size: 63% 4.5px;
-    padding-bottom: 15px;
 }
 
 .scrollmenu2 a {
@@ -412,7 +441,7 @@ hr {
 
 #supporthostingairbnb {
     background-color: rgba(247, 247, 247);
-    padding: 40px 55px 40px 55px;
+    padding: 10px 55px 0px 55px;
 }
 
 .linksheading {
@@ -421,6 +450,10 @@ hr {
     font-size: 14px;
     color: #222;
     margin-top: 50px;
+}
+
+.links {
+    padding-bottom: 35px;
 }
 
 .links a {
@@ -469,6 +502,11 @@ footer {
     padding-left: 55px;
 }
 
+footer {
+    padding-top: 35px;
+    padding-bottom: 155px;
+}
+
 .footerlinks {
     padding-left: 55px;
     padding-top: 5px;
@@ -479,7 +517,6 @@ footer {
     font-size: 14px;
     color: #222;
     line-height: 1.75;
-    margin-bottom: 50px;
 }
 
 .dot2 {
