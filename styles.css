@@ -439,7 +439,7 @@ hr {
 
 #supporthostingairbnb {
     background-color: rgba(247, 247, 247);
-    padding: 40px 55px 40px 55px;
+    padding: 10px 55px 0px 55px;
 }
 
 .linksheading {
@@ -448,6 +448,10 @@ hr {
     font-size: 14px;
     color: #222;
     margin-top: 50px;
+}
+
+.links {
+    padding-bottom: 35px;
 }
 
 .links a {
@@ -496,6 +500,11 @@ footer {
     padding-left: 55px;
 }
 
+footer {
+    padding-top: 35px;
+    padding-bottom: 155px;
+}
+
 .footerlinks {
     padding-left: 55px;
     padding-top: 5px;
@@ -506,7 +515,6 @@ footer {
     font-size: 14px;
     color: #222;
     line-height: 1.75;
-    margin-bottom: 50px;
 }
 
 .dot2 {
