@@ -62,6 +62,21 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
         box-sizing: border-box;
+    scroll-padding-top: 500px;
+}
+
+html {
+    --top-spacing: 335px;
+    scroll-padding-top: var(--top-spacing);
+}
+
+header.fixed {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    z-index: 10;
 }
 
 body {
@@ -70,7 +85,7 @@ body {
     line-height: 1.43;
     color: #222;
     background-color: #fff;
-    margin: 0px 0px 0px 0px;
+    margin: var(--top-spacing) auto;
     display: grid;
     grid-template-columns: 100%;
 }
