@@ -272,6 +272,8 @@ a {
     color: #222;
     margin-top: 6px;
     margin-bottom: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .rating {
