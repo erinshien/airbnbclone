@@ -430,3 +430,61 @@ hr {
     line-height: 2.25;
     margin-bottom: 50px;
 }
+
+footer {
+    background-color: rgba(247, 247, 247);
+}
+
+.languagebutton {
+    border: none;
+    background-color: transparent;
+    font-family: 'AirbnbCereal';
+    font-weight: 600;
+    font-size: 32px;
+    color: #222;
+    text-align: left;
+    padding: 15px 0px 15px 100px;
+    position: relative;
+}
+
+.languagebutton svg {
+    position: absolute;
+    top: 20px;
+    left: 53px;
+}
+
+.currencybutton {
+    border: none;
+    background-color: transparent;
+    font-family: 'AirbnbCereal';
+    font-weight: 600;
+    font-size: 32px;
+    color: #222;
+    text-align: left;
+    padding: 15px 0px 50px 50px;
+    position: relative;
+}
+
+.copyright {
+    padding-left: 55px;
+}
+
+.footerlinks {
+    padding-left: 55px;
+    padding-top: 5px;
+}
+
+.footerlinks a {
+    font-family: 'AirbnbCereal', light;
+    font-size: 14px;
+    color: #222;
+    line-height: 1.75;
+    margin-bottom: 50px;
+}
+
+.dot2 {
+    font-family: 'AirbnbCereal', light;
+    font-size: 12px;
+    color: #222;
+    padding: 0 10px 0 10px;
+}
