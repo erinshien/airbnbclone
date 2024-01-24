@@ -217,12 +217,12 @@ a {
     max-height: 830px;
     object-fit: cover;
     border-radius: 30px;
-    margin-bottom: 10px;
 }
 
 .propertycard {
     position: relative;
-    margin-bottom: 125px;
+    margin-bottom: 100px;
+    line-height: 2;
 }
 
 .guestfavourite {
@@ -291,8 +291,12 @@ a {
 }
 
 .propertyprice {
+    font-weight: 500;
     font-size: 36px;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
     color: #222;
+    line-height: 1.25;
 }
 
 h3 {
