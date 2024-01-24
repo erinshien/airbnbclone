@@ -171,7 +171,7 @@ a {
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
-    margin: 0px 55px 30px 12px;
+    padding: 0px 55px 30px 12px;
     -webkit-overflow-scrolling: touch;
 }
 
@@ -193,6 +193,15 @@ a {
     background:linear-gradient(#222,#222) bottom no-repeat;
     background-size: 46% 4.5px;
     padding-bottom: 15px;
+}
+
+.notselectedproperty a {
+    color: rgba(113, 113, 113);
+}
+
+.notselectedproperty img{
+    filter: invert(40%);
+    -webkit-filter: invert(40%);
 }
 
 #propertycards {
