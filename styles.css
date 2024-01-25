@@ -443,7 +443,7 @@ h2 {
 }
 
 .show-more-2 {
-    border: none;
+    border: 0;
     background-color: transparent;
     font-family: 'AirbnbCereal';
     font-weight: 600;
@@ -519,7 +519,7 @@ footer {
 }
 
 .language-button {
-    border: none;
+    border: 0;
     background-color: transparent;
     font-family: 'AirbnbCereal';
     font-weight: 600;
@@ -537,7 +537,7 @@ footer {
 }
 
 .currency-button {
-    border: none;
+    border: 0;
     background-color: transparent;
     font-family: 'AirbnbCereal';
     font-weight: 600;
