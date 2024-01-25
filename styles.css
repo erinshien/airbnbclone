@@ -239,10 +239,10 @@ a {
 }
 
 .property-card img {
-    min-width: 860px;
-    max-width: 860px;
-    min-height: 825px;
-    max-height: 825px;
+    min-width: 865px;
+    max-width: 865px;
+    min-height: 830px;
+    max-height: 830px;
     object-fit: cover;
     border-radius: 30px;
     margin: 0 auto;
@@ -332,6 +332,7 @@ a {
 
 h3 {
     font-size: 42px;
+    font-weight: 600;
     color: #222;
     text-align: center;
 }
@@ -360,7 +361,7 @@ h3 {
 }
 
 h2 {
-    font-size: 48px;
+    font-size: 50px;
     font-weight: 600;
     color: #222;
     text-align: left;
@@ -373,6 +374,7 @@ h2 {
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
+    margin-right: 55px;
     padding: 0px 55px 0px 16px;
     -webkit-overflow-scrolling: touch;
 }
