@@ -1,109 +1,293 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-GB">
     <head>
+        <meta charset="UTF-8">
         <title>Airbnb | Holiday rentals, cabins, beach houses & more</title>
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <header class="fixed">
             <section id="search">
-                <button class="searchbutton">
-                    <svg class="searchicon" xmlns="http://www.w3.org/2000/svg" viewBox="-27 -8 58 58" style="display:block;height:112%;width:112%;fill:currentColor">
+                <button class="search-button">
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="-27 -8 58 58" style="display:block;height:112%;width:112%;fill:currentColor">
                         <path d="M13 0a13 13 0 0 1 10.5 20.67l7.91 7.92-2.82 2.82-7.92-7.91A12.94 12.94 0 0 1 13 26a13 13 0 1 1 0-26zm0 4a9 9 0 1 0 0 18 9 9 0 0 0 0-18z"/>
                     </svg>
-                    <div class="searchtext">
-                        <p class="line1">Anywhere</p>
-                        <p class="line2">Any week <span class="dot">•</span> Add guests</p>
+                    <div class="search-text">
+                        <p class="line-1">Anywhere</p>
+                        <p class="line-2">Any week <span class="dot">•</span> Add guests</p>
                     </div>
                 </button>
-                <button class="filtersbutton">
+                <button class="filters-button">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="-16.5 0 32 32" style="display:block;fill:none;height:36px;width:36px;stroke:currentColor;stroke-width:4;overflow:visible" aria-hidden="true" role="presentation" focusable="false">
                         <path fill="none" d="M7 16H3m26 0H15M29 6h-4m-8 0H3m26 20h-4M7 16a4 4 0 1 0 8 0 4 4 0 0 0-8 0zM17 6a4 4 0 1 0 8 0 4 4 0 0 0-8 0zm0 20a4 4 0 1 0 8 0 4 4 0 0 0-8 0zm0 0H3"/>
                     </svg>
                 </button>
             </section>
-            <section id="propertytabs">
-                <div class="scrollmenu">
-                    <span class="selectedproperty">
-                        <a href=""><img src="https://a0.muscache.com/pictures/c5a4f6fc-c92c-4ae8-87dd-57f1ff1b89a6.jpg" alt width="56" height="56"><br>OMG!</a>
+            <section id="property-tabs">
+                <div class="scroll-menu">
+                    <span class="selected-property">
+                        <a href="">
+                            <img src="https://a0.muscache.com/pictures/c5a4f6fc-c92c-4ae8-87dd-57f1ff1b89a6.jpg" alt width="56" height="56"><br>
+                            OMG!
+                        </a>
                     </span>
-                    <span class="notselectedproperty">
-                        <a href=""><img src="https://a0.muscache.com/pictures/50861fca-582c-4bcc-89d3-857fb7ca6528.jpg" alt width="56" height="56"><br>Design</a>
-                        <a href=""><img src="https://a0.muscache.com/pictures/732edad8-3ae0-49a8-a451-29a8010dcc0c.jpg" alt width="56" height="56"><br>Cabins</a>
-                        <a href=""><img src="https://a0.muscache.com/pictures/4221e293-4770-4ea8-a4fa-9972158d4004.jpg" alt width="56" height="56"><br>Caves</a>
-                        <a href=""><img src="https://a0.muscache.com/pictures/4759a0a7-96a8-4dcd-9490-ed785af6df14.jpg" alt width="56" height="56"><br>Yurts</a>
-                        <a href=""><img src="https://a0.muscache.com/pictures/687a8682-68b3-4f21-8d71-3c3aef6c1110.jpg" alt width="56" height="56"><br>Boats</a>
-                        <a href=""><img src="https://a0.muscache.com/pictures/747b326c-cb8f-41cf-a7f9-809ab646e10c.jpg" alt width="56" height="56"><br>Shepherd's huts</a>
-                        <a href=""><img src="https://a0.muscache.com/pictures/3271df99-f071-4ecf-9128-eb2d2b1f50f0.jpg" alt width="56" height="56"><br>Tiny homes</a>
-                        <a href=""><img src="https://a0.muscache.com/pictures/c027ff1a-b89c-4331-ae04-f8dee1cdc287.jpg" alt width="56" height="56"><br>Houseboats</a>
-                        <a href=""><img src="https://a0.muscache.com/pictures/78ba8486-6ba6-4a43-a56d-f556189193da.jpg" alt width="56" height="56"><br>Mansions</a>
-                        <a href=""><img src="https://a0.muscache.com/pictures/bcd1adc0-5cee-4d7a-85ec-f6730b0f8d0c.jpg" alt width="56" height="56"><br>Beachfront</a>
-                        <a href=""><img src="https://a0.muscache.com/pictures/6ad4bd95-f086-437d-97e3-14d12155ddfe.jpg" alt width="56" height="56"><br>Countryside</a>
-                        <a href=""><img src="https://a0.muscache.com/pictures/4d4a4eba-c7e4-43eb-9ce2-95e1d200d10e.jpg" alt width="56" height="56"><br>Treehouses</a>
-                        <a href=""><img src="https://a0.muscache.com/pictures/3726d94b-534a-42b8-bca0-a0304d912260.jpg" alt width="56" height="56"><br>Trending</a>
-                        <a href=""><img src="https://a0.muscache.com/pictures/3fb523a0-b622-4368-8142-b5e03df7549b.jpg" alt width="56" height="56"><br>Amazing pools</a>
-                        <a href=""><img src="https://a0.muscache.com/pictures/3b1eb541-46d9-4bef-abc4-c37d77e3c21b.jpg" alt width="56" height="56"><br>Amazing views</a>
-                        <a href=""><img src="https://a0.muscache.com/pictures/1d477273-96d6-4819-9bda-9085f809dad3.jpg" alt width="56" height="56"><br>A-frames</a>
-                        <a href=""><img src="https://a0.muscache.com/pictures/9a2ca4df-ee90-4063-b15d-0de7e4ce210a.jpg" alt width="56" height="56"><br>Off-the-grid</a>
-                        <a href=""><img src="https://a0.muscache.com/pictures/89faf9ae-bbbc-4bc4-aecd-cc15bf36cbca.jpg" alt width="56" height="56"><br>Domes</a>
-                        <a href=""><img src="https://a0.muscache.com/pictures/c0a24c04-ce1f-490c-833f-987613930eca.jpg" alt width="56" height="56"><br>National parks</a>
-                        <a href=""><img src="https://a0.muscache.com/pictures/5ed8f7c7-2e1f-43a8-9a39-4edfc81a3325.jpg" alt width="56" height="56"><br>Bed & breakfasts</a>
-                        <a href=""><img src="https://a0.muscache.com/pictures/c8e2ed05-c666-47b6-99fc-4cb6edcde6b4.jpg" alt width="56" height="56"><br>Luxe</a>
-                        <a href=""><img src="https://a0.muscache.com/pictures/33dd714a-7b4a-4654-aaf0-f58ea887a688.jpg" alt width="56" height="56"><br>Historical homes</a>
-                        <a href=""><img src="https://a0.muscache.com/pictures/a4634ca6-1407-4864-ab97-6e141967d782.jpg" alt width="56" height="56"><br>Lake</a>
-                        <a href=""><img src="https://a0.muscache.com/pictures/677a041d-7264-4c45-bb72-52bff21eb6e8.jpg" alt width="56" height="56"><br>Lakefront</a>
-                        <a href=""><img src="https://a0.muscache.com/pictures/d7445031-62c4-46d0-91c3-4f29f9790f7a.jpg" alt width="56" height="56"><br>Earth homes</a>
-                        <a href=""><img src="https://a0.muscache.com/pictures/f0c5ca0f-5aa0-4fe5-b38d-654264bacddf.jpg" alt width="56" height="56"><br>Play</a>
-                        <a href=""><img src="https://a0.muscache.com/pictures/ddd13204-a5ae-4532-898c-2e595b1bb15f.jpg" alt width="56" height="56"><br>Chef's kitchens</a>
-                        <a href=""><img src="https://a0.muscache.com/pictures/8b44f770-7156-4c7b-b4d3-d92549c8652f.jpg" alt width="56" height="56"><br>Arctic</a>
-                        <a href=""><img src="https://a0.muscache.com/pictures/ed8b9e47-609b-44c2-9768-33e6a22eccb2.jpg" alt width="56" height="56"><br>Iconic cities</a>
-                        <a href=""><img src="https://a0.muscache.com/pictures/c8bba3ed-34c0-464a-8e6e-27574d20e4d2.jpg" alt width="56" height="56"><br>Skiing</a>
-                        <a href=""><img src="https://a0.muscache.com/pictures/8e507f16-4943-4be9-b707-59bd38d56309.jpg" alt width="56" height="56"><br>Islands</a>
-                        <a href=""><img src="https://a0.muscache.com/pictures/e4b12c1b-409b-4cb6-a674-7c1284449f6e.jpg" alt width="56" height="56"><br>Cycladic homes</a>
-                        <a href=""><img src="https://a0.muscache.com/pictures/1b6a8b70-a3b6-48b5-88e1-2243d9172c06.jpg" alt width="56" height="56"><br>Castles</a>
-                        <a href=""><img src="https://a0.muscache.com/pictures/aaa02c2d-9f0d-4c41-878a-68c12ec6c6bd.jpg" alt width="56" height="56"><br>Farms</a>
-                        <a href=""><img src="https://a0.muscache.com/pictures/ca25c7f3-0d1f-432b-9efa-b9f5dc6d8770.jpg" alt width="56" height="56"><br>Camping</a>
-                        <a href=""><img src="https://a0.muscache.com/pictures/60ff02ae-d4a2-4d18-a120-0dd274a95925.jpg" alt width="56" height="56"><br>Vineyards</a>
-                        <a href=""><img src="https://a0.muscache.com/pictures/a6dd2bae-5fd0-4b28-b123-206783b5de1d.jpg" alt width="56" height="56"><br>Desert</a>
-                        <a href=""><img src="https://a0.muscache.com/pictures/248f85bf-e35e-4dc3-a9a1-e1dbff9a3db4.jpg" alt width="56" height="56"><br>Top of the world</a>
-                        <a href=""><img src="https://a0.muscache.com/pictures/6b639c8d-cf9b-41fb-91a0-91af9d7677cc.jpg" alt width="56" height="56"><br>Golfing</a>
-                        <a href=""><img src="https://a0.muscache.com/pictures/7630c83f-96a8-4232-9a10-0398661e2e6f.jpg" alt width="56" height="56"><br>Rooms</a>
-                        <a href=""><img src="https://a0.muscache.com/pictures/957f8022-dfd7-426c-99fd-77ed792f6d7a.jpg" alt width="56" height="56"><br>Surfing</a>
-                        <a href=""><img src="https://a0.muscache.com/pictures/8a43b8c6-7eb4-421c-b3a9-1bd9fcb26622.jpg" alt width="56" height="56"><br>Creative spaces</a>
-                        <a href=""><img src="https://a0.muscache.com/pictures/c0fa9598-4e37-40f3-b734-4bd0e2377add.jpg" alt width="56" height="56"><br>New</a>
-                        <a href=""><img src="https://a0.muscache.com/pictures/31c1d523-cc46-45b3-957a-da76c30c85f9.jpg" alt width="56" height="56"><br>Camper vans</a>
-                        <a href=""><img src="https://a0.muscache.com/pictures/f60700bc-8ab5-424c-912b-6ef17abc479a.jpg" alt width="56" height="56"><br>Barns</a>
-                        <a href=""><img src="https://a0.muscache.com/pictures/ee9e2a40-ffac-4db9-9080-b351efc3cfc4.jpg" alt width="56" height="56"><br>Tropical</a>
-                        <a href=""><img src="https://a0.muscache.com/pictures/51f5cf64-5821-400c-8033-8a10c7787d69.jpg" alt width="56" height="56"><br>Hanoks</a>
-                        <a href=""><img src="https://a0.muscache.com/pictures/48b55f09-f51c-4ff5-b2c6-7f6bd4d1e049.jpg" alt width="56" height="56"><br>Minsus</a>
-                        <a href=""><img src="https://a0.muscache.com/pictures/827c5623-d182-474a-823c-db3894490896.jpg" alt width="56" height="56"><br>Ryokans</a>
-                        <a href=""><img src="https://a0.muscache.com/pictures/251c0635-cc91-4ef7-bb13-1084d5229446.jpg" alt width="56" height="56"><br>Casas particulares</a>
-                        <a href=""><img src="https://a0.muscache.com/pictures/d721318f-4752-417d-b4fa-77da3cbc3269.jpg" alt width="56" height="56"><br>Towers</a>
-                        <a href=""><img src="https://a0.muscache.com/pictures/e22b0816-f0f3-42a0-a5db-e0f1fa93292b.jpg" alt width="56" height="56"><br>Adapted</a>
-                        <a href=""><img src="https://a0.muscache.com/pictures/5cdb8451-8f75-4c5f-a17d-33ee228e3db8.jpg" alt width="56" height="56"><br>Windmills</a>
-                        <a href=""><img src="https://a0.muscache.com/pictures/757deeaa-c78f-488f-992b-d3b1ecc06fc9.jpg" alt width="56" height="56"><br>Ski-in/out</a>
-                        <a href=""><img src="https://a0.muscache.com/pictures/8eccb972-4bd6-43c5-ac83-27822c0d3dcd.jpg" alt width="56" height="56"><br>Grand pianos</a>
-                        <a href=""><img src="https://a0.muscache.com/pictures/0ff9740e-52a2-4cd5-ae5a-94e1bfb560d6.jpg" alt width="56" height="56"><br>Containers</a>
-                        <a href=""><img src="https://a0.muscache.com/pictures/c9157d0a-98fe-4516-af81-44022118fbc7.jpg" alt width="56" height="56"><br>Dammusi</a>
-                        <a href=""><img src="https://a0.muscache.com/pictures/33848f9e-8dd6-4777-b905-ed38342bacb9.jpg" alt width="56" height="56"><br>Trulli</a>
-                        <a href=""><img src="https://a0.muscache.com/pictures/7ff6e4a1-51b4-4671-bc9a-6f523f196c61.jpg" alt width="56" height="56"><br>Riads</a>
-                        <a href=""><img src="https://a0.muscache.com/pictures/10ce1091-c854-40f3-a2fb-defc2995bcaf.jpg" alt width="56" height="56"><br>Beach</a>
+                    <span class="not-selected-property">
+                        <a href="">
+                            <img src="https://a0.muscache.com/pictures/50861fca-582c-4bcc-89d3-857fb7ca6528.jpg" alt width="56" height="56"><br>
+                            Design
+                        </a>
+                        <a href="">
+                            <img src="https://a0.muscache.com/pictures/732edad8-3ae0-49a8-a451-29a8010dcc0c.jpg" alt width="56" height="56"><br>
+                            Cabins
+                        </a>
+                        <a href="">
+                            <img src="https://a0.muscache.com/pictures/4221e293-4770-4ea8-a4fa-9972158d4004.jpg" alt width="56" height="56"><br>
+                            Caves
+                        </a>
+                        <a href="">
+                            <img src="https://a0.muscache.com/pictures/4759a0a7-96a8-4dcd-9490-ed785af6df14.jpg" alt width="56" height="56"><br>
+                            Yurts
+                        </a>
+                        <a href="">
+                            <img src="https://a0.muscache.com/pictures/687a8682-68b3-4f21-8d71-3c3aef6c1110.jpg" alt width="56" height="56"><br>
+                            Boats
+                        </a>
+                        <a href="">
+                            <img src="https://a0.muscache.com/pictures/747b326c-cb8f-41cf-a7f9-809ab646e10c.jpg" alt width="56" height="56"><br>
+                            Shepherd's huts
+                        </a>
+                        <a href="">
+                            <img src="https://a0.muscache.com/pictures/3271df99-f071-4ecf-9128-eb2d2b1f50f0.jpg" alt width="56" height="56"><br>
+                            Tiny homes
+                        </a>
+                        <a href="">
+                            <img src="https://a0.muscache.com/pictures/c027ff1a-b89c-4331-ae04-f8dee1cdc287.jpg" alt width="56" height="56"><br>
+                            Houseboats
+                        </a>
+                        <a href="">
+                            <img src="https://a0.muscache.com/pictures/78ba8486-6ba6-4a43-a56d-f556189193da.jpg" alt width="56" height="56"><br>
+                            Mansions
+                        </a>
+                        <a href="">
+                            <img src="https://a0.muscache.com/pictures/bcd1adc0-5cee-4d7a-85ec-f6730b0f8d0c.jpg" alt width="56" height="56"><br>
+                            Beachfront
+                        </a>
+                        <a href="">
+                            <img src="https://a0.muscache.com/pictures/6ad4bd95-f086-437d-97e3-14d12155ddfe.jpg" alt width="56" height="56"><br>
+                            Countryside
+                        </a>
+                        <a href="">
+                            <img src="https://a0.muscache.com/pictures/4d4a4eba-c7e4-43eb-9ce2-95e1d200d10e.jpg" alt width="56" height="56"><br>
+                            Treehouses
+                        </a>
+                        <a href="">
+                            <img src="https://a0.muscache.com/pictures/3726d94b-534a-42b8-bca0-a0304d912260.jpg" alt width="56" height="56"><br>
+                            Trending
+                        </a>
+                        <a href="">
+                            <img src="https://a0.muscache.com/pictures/3fb523a0-b622-4368-8142-b5e03df7549b.jpg" alt width="56" height="56"><br>
+                            Amazing pools
+                        </a>
+                        <a href="">
+                            <img src="https://a0.muscache.com/pictures/3b1eb541-46d9-4bef-abc4-c37d77e3c21b.jpg" alt width="56" height="56"><br>
+                            Amazing views
+                        </a>
+                        <a href="">
+                            <img src="https://a0.muscache.com/pictures/1d477273-96d6-4819-9bda-9085f809dad3.jpg" alt width="56" height="56"><br>
+                            A-frames
+                        </a>
+                        <a href="">
+                            <img src="https://a0.muscache.com/pictures/9a2ca4df-ee90-4063-b15d-0de7e4ce210a.jpg" alt width="56" height="56"><br>
+                            Off-the-grid
+                        </a>
+                        <a href="">
+                            <img src="https://a0.muscache.com/pictures/89faf9ae-bbbc-4bc4-aecd-cc15bf36cbca.jpg" alt width="56" height="56"><br>
+                            Domes
+                        </a>
+                        <a href="">
+                            <img src="https://a0.muscache.com/pictures/c0a24c04-ce1f-490c-833f-987613930eca.jpg" alt width="56" height="56"><br>
+                            National parks
+                        </a>
+                        <a href="">
+                            <img src="https://a0.muscache.com/pictures/5ed8f7c7-2e1f-43a8-9a39-4edfc81a3325.jpg" alt width="56" height="56"><br>
+                            Bed & breakfasts
+                        </a>
+                        <a href="">
+                            <img src="https://a0.muscache.com/pictures/c8e2ed05-c666-47b6-99fc-4cb6edcde6b4.jpg" alt width="56" height="56"><br>
+                            Luxe
+                        </a>
+                        <a href="">
+                            <img src="https://a0.muscache.com/pictures/33dd714a-7b4a-4654-aaf0-f58ea887a688.jpg" alt width="56" height="56"><br>
+                            Historical homes
+                        </a>
+                        <a href="">
+                            <img src="https://a0.muscache.com/pictures/a4634ca6-1407-4864-ab97-6e141967d782.jpg" alt width="56" height="56"><br>
+                            Lake
+                        </a>
+                        <a href="">
+                            <img src="https://a0.muscache.com/pictures/677a041d-7264-4c45-bb72-52bff21eb6e8.jpg" alt width="56" height="56"><br>
+                            Lakefront
+                        </a>
+                        <a href="">
+                            <img src="https://a0.muscache.com/pictures/d7445031-62c4-46d0-91c3-4f29f9790f7a.jpg" alt width="56" height="56"><br>
+                            Earth homes
+                        </a>
+                        <a href="">
+                            <img src="https://a0.muscache.com/pictures/f0c5ca0f-5aa0-4fe5-b38d-654264bacddf.jpg" alt width="56" height="56"><br>
+                            Play
+                        </a>
+                        <a href="">
+                            <img src="https://a0.muscache.com/pictures/ddd13204-a5ae-4532-898c-2e595b1bb15f.jpg" alt width="56" height="56"><br>
+                            Chef's kitchens
+                        </a>
+                        <a href="">
+                            <img src="https://a0.muscache.com/pictures/8b44f770-7156-4c7b-b4d3-d92549c8652f.jpg" alt width="56" height="56"><br>
+                            Arctic
+                        </a>
+                        <a href="">
+                            <img src="https://a0.muscache.com/pictures/ed8b9e47-609b-44c2-9768-33e6a22eccb2.jpg" alt width="56" height="56"><br>
+                            Iconic cities
+                        </a>
+                        <a href="">
+                            <img src="https://a0.muscache.com/pictures/c8bba3ed-34c0-464a-8e6e-27574d20e4d2.jpg" alt width="56" height="56"><br>
+                            Skiing
+                        </a>
+                        <a href="">
+                            <img src="https://a0.muscache.com/pictures/8e507f16-4943-4be9-b707-59bd38d56309.jpg" alt width="56" height="56"><br>
+                            Islands
+                        </a>
+                        <a href="">
+                            <img src="https://a0.muscache.com/pictures/e4b12c1b-409b-4cb6-a674-7c1284449f6e.jpg" alt width="56" height="56"><br>
+                            Cycladic homes
+                        </a>
+                        <a href="">
+                            <img src="https://a0.muscache.com/pictures/1b6a8b70-a3b6-48b5-88e1-2243d9172c06.jpg" alt width="56" height="56"><br>
+                            Castles
+                        </a>
+                        <a href="">
+                            <img src="https://a0.muscache.com/pictures/aaa02c2d-9f0d-4c41-878a-68c12ec6c6bd.jpg" alt width="56" height="56"><br>
+                            Farms
+                        </a>
+                        <a href="">
+                            <img src="https://a0.muscache.com/pictures/ca25c7f3-0d1f-432b-9efa-b9f5dc6d8770.jpg" alt width="56" height="56"><br>
+                            Camping
+                        </a>
+                        <a href="">
+                            <img src="https://a0.muscache.com/pictures/60ff02ae-d4a2-4d18-a120-0dd274a95925.jpg" alt width="56" height="56"><br>
+                            Vineyards
+                        </a>
+                        <a href="">
+                            <img src="https://a0.muscache.com/pictures/a6dd2bae-5fd0-4b28-b123-206783b5de1d.jpg" alt width="56" height="56"><br>
+                            Desert
+                        </a>
+                        <a href="">
+                            <img src="https://a0.muscache.com/pictures/248f85bf-e35e-4dc3-a9a1-e1dbff9a3db4.jpg" alt width="56" height="56"><br>
+                            Top of the world
+                        </a>
+                        <a href="">
+                            <img src="https://a0.muscache.com/pictures/6b639c8d-cf9b-41fb-91a0-91af9d7677cc.jpg" alt width="56" height="56"><br>
+                            Golfing
+                        </a>
+                        <a href="">
+                            <img src="https://a0.muscache.com/pictures/7630c83f-96a8-4232-9a10-0398661e2e6f.jpg" alt width="56" height="56"><br>
+                            Rooms
+                        </a>
+                        <a href="">
+                            <img src="https://a0.muscache.com/pictures/957f8022-dfd7-426c-99fd-77ed792f6d7a.jpg" alt width="56" height="56"><br>
+                            Surfing
+                        </a>
+                        <a href="">
+                            <img src="https://a0.muscache.com/pictures/8a43b8c6-7eb4-421c-b3a9-1bd9fcb26622.jpg" alt width="56" height="56"><br>
+                            Creative spaces
+                        </a>
+                        <a href="">
+                            <img src="https://a0.muscache.com/pictures/c0fa9598-4e37-40f3-b734-4bd0e2377add.jpg" alt width="56" height="56"><br>
+                            New
+                        </a>
+                        <a href="">
+                            <img src="https://a0.muscache.com/pictures/31c1d523-cc46-45b3-957a-da76c30c85f9.jpg" alt width="56" height="56"><br>
+                            Camper vans
+                        </a>
+                        <a href="">
+                            <img src="https://a0.muscache.com/pictures/f60700bc-8ab5-424c-912b-6ef17abc479a.jpg" alt width="56" height="56"><br>
+                            Barns
+                        </a>
+                        <a href="">
+                            <img src="https://a0.muscache.com/pictures/ee9e2a40-ffac-4db9-9080-b351efc3cfc4.jpg" alt width="56" height="56"><br>
+                            Tropical
+                        </a>
+                        <a href="">
+                            <img src="https://a0.muscache.com/pictures/51f5cf64-5821-400c-8033-8a10c7787d69.jpg" alt width="56" height="56"><br>
+                            Hanoks
+                        </a>
+                        <a href="">
+                            <img src="https://a0.muscache.com/pictures/48b55f09-f51c-4ff5-b2c6-7f6bd4d1e049.jpg" alt width="56" height="56"><br>
+                            Minsus
+                        </a>
+                        <a href="">
+                            <img src="https://a0.muscache.com/pictures/827c5623-d182-474a-823c-db3894490896.jpg" alt width="56" height="56"><br>
+                            Ryokans
+                        </a>
+                        <a href="">
+                            <img src="https://a0.muscache.com/pictures/251c0635-cc91-4ef7-bb13-1084d5229446.jpg" alt width="56" height="56"><br>
+                            Casas particulares
+                        </a>
+                        <a href="">
+                            <img src="https://a0.muscache.com/pictures/d721318f-4752-417d-b4fa-77da3cbc3269.jpg" alt width="56" height="56"><br>
+                            Towers
+                        </a>
+                        <a href="">
+                            <img src="https://a0.muscache.com/pictures/e22b0816-f0f3-42a0-a5db-e0f1fa93292b.jpg" alt width="56" height="56"><br>
+                            Adapted
+                        </a>
+                        <a href="">
+                            <img src="https://a0.muscache.com/pictures/5cdb8451-8f75-4c5f-a17d-33ee228e3db8.jpg" alt width="56" height="56"><br>
+                            Windmills
+                        </a>
+                        <a href="">
+                            <img src="https://a0.muscache.com/pictures/757deeaa-c78f-488f-992b-d3b1ecc06fc9.jpg" alt width="56" height="56"><br>
+                            Ski-in/out
+                        </a>
+                        <a href="">
+                            <img src="https://a0.muscache.com/pictures/8eccb972-4bd6-43c5-ac83-27822c0d3dcd.jpg" alt width="56" height="56"><br>
+                            Grand pianos
+                        </a>
+                        <a href="">
+                            <img src="https://a0.muscache.com/pictures/0ff9740e-52a2-4cd5-ae5a-94e1bfb560d6.jpg" alt width="56" height="56"><br>
+                            Containers
+                        </a>
+                        <a href="">
+                            <img src="https://a0.muscache.com/pictures/c9157d0a-98fe-4516-af81-44022118fbc7.jpg" alt width="56" height="56"><br>
+                            Dammusi
+                        </a>
+                        <a href="">
+                            <img src="https://a0.muscache.com/pictures/33848f9e-8dd6-4777-b905-ed38342bacb9.jpg" alt width="56" height="56"><br>
+                            Trulli
+                        </a>
+                        <a href="">
+                            <img src="https://a0.muscache.com/pictures/7ff6e4a1-51b4-4671-bc9a-6f523f196c61.jpg" alt width="56" height="56"><br>
+                            Riads
+                        </a>
+                        <a href="">
+                            <img src="https://a0.muscache.com/pictures/10ce1091-c854-40f3-a2fb-defc2995bcaf.jpg" alt width="56" height="56"><br>
+                            Beach
+                        </a>
                     </span>
             </section>
         </header>
         <main>
-            <section id="propertycards">
-                <div class="propertycard">
-                    <button class="guestfavourite">Guest favourite</button>
-                    <button class="favouriteheart">
+            <section id="property-cards">
+                <div class="property-card">
+                    <button class="guest-favourite">Guest favourite</button>
+                    <button class="favourite-heart">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 56px; width: 56px; stroke: var(--f-mkcy-f); stroke-width: 2; overflow: visible; stroke: #fff;">
                             <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
                         </svg>
                     </button>
                     <img src="https://a0.muscache.com/im/pictures/b7c9264d-73c9-45c3-882e-6e9577d63d68.jpg?im_w=720">
-                    <div class="propertycardcontainer">
-                        <div class="propertycardheading">
-                            <p class="propertyheading">Drimnin, UK</p>
+                    <div class="property-card-container">
+                        <div class="property-card-heading">
+                            <p class="property-heading">Drimnin, UK</p>
                             <div class="rating">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 34 34" aria-hidden="true" role="presentation" focusable="false" style="display: inline-block; height: 32px; width: 32px; fill: #222;">
                                     <path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path>
@@ -111,22 +295,22 @@
                                 <span>4.94</span>
                             </div>
                         </div>
-                        <p class="propertyinfo">Individual Host</p>
-                        <p class="propertyinfo">22-27 Jan</p>
-                        <a href="" class="propertyprice"><strong>£994</strong> total</a>
+                        <p class="property-info">Individual Host</p>
+                        <p class="property-info">22-27 Jan</p>
+                        <a href="" class="property-price"><strong>£994</strong> total</a>
                     </div>
                 </div>
-                <div class="propertycard">
-                    <button class="guestfavourite">Guest favourite</button>
-                    <button class="favouriteheart">
+                <div class="property-card">
+                    <button class="guest-favourite">Guest favourite</button>
+                    <button class="favourite-heart">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 56px; width: 56px; stroke: var(--f-mkcy-f); stroke-width: 2; overflow: visible; stroke: #fff;">
                             <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
                         </svg>
                     </button>
                     <img src="https://a0.muscache.com/im/pictures/9da940a2-82d0-4efc-808e-381292ac5321.jpg?im_w=720">
-                    <div class="propertycardcontainer">
-                        <div class="propertycardheading">
-                            <p class="propertyheading">Redberth, UK</p>
+                    <div class="property-card-container">
+                        <div class="property-card-heading">
+                            <p class="property-heading">Redberth, UK</p>
                             <div class="rating">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 34 34" aria-hidden="true" role="presentation" focusable="false" style="display: inline-block; height: 32px; width: 32px; fill: #222;">
                                 <path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path>
@@ -134,21 +318,21 @@
                             <span>4.84</span>
                             </div>
                         </div>
-                        <p class="propertyinfo">Individual Host</p>
-                        <p class="propertyinfo">16-21 Jan</p>
-                        <a href="" class="propertyprice"><strong>£1,065</strong> total</a>
+                        <p class="property-info">Individual Host</p>
+                        <p class="property-info">16-21 Jan</p>
+                        <a href="" class="property-price"><strong>£1,065</strong> total</a>
                     </div>
                 </div>
-                <div class="propertycard">
-                    <button class="favouriteheart">
+                <div class="property-card">
+                    <button class="favourite-heart">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 56px; width: 56px; stroke: var(--f-mkcy-f); stroke-width: 2; overflow: visible; stroke: #fff;">
                             <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
                         </svg>
                     </button>
                     <img src="https://a0.muscache.com/im/pictures/miso/Hosting-5264493/original/10d2c21f-84c2-46c5-b20b-b51d1c2c971a.jpeg?im_w=720">
-                    <div class="propertycardcontainer">
-                        <div class="propertycardheading">
-                            <p class="propertyheading">Ponta Delgada, Portugal</h4>
+                    <div class="property-card-container">
+                        <div class="property-card-heading">
+                            <p class="property-heading">Ponta Delgada, Portugal</h4>
                             <div class="rating">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 34 34" aria-hidden="true" role="presentation" focusable="false" style="display: inline-block; height: 32px; width: 32px; fill: #222;">
                                 <path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path>
@@ -156,38 +340,38 @@
                             <span>4.93</span>
                             </div>
                         </div>
-                        <p class="propertyinfo">Professional Host</p>
-                        <p class="propertyinfo">11-6 Oct</p>
-                        <a href="" class="propertyprice"><strong>£903</strong> total</a>
+                        <p class="property-info">Professional Host</p>
+                        <p class="property-info">11-6 Oct</p>
+                        <a href="" class="property-price"><strong>£903</strong> total</a>
                     </div>
                 </div>
-                <div class="propertycard">
-                    <button class="favouriteheart">
+                <div class="property-card">
+                    <button class="favourite-heart">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 56px; width: 56px; stroke: var(--f-mkcy-f); stroke-width: 2; overflow: visible; stroke: #fff;">
                             <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
                         </svg>
                     </button>
                     <img src="https://a0.muscache.com/im/pictures/miso/Hosting-20952140/original/bf7c8905-c1e1-4855-bbe6-88d3e7d79fc5.jpeg?im_w=720">
-                    <div class="propertycardcontainer">
-                        <div class="propertycardheading">
-                            <p class="propertyheading">Amsterdam, Netherlands</p>
+                    <div class="property-card-container">
+                        <div class="property-card-heading">
+                            <p class="property-heading">Amsterdam, Netherlands</p>
                         </div>
-                        <p class="propertyinfo">Professional Host</p>
-                        <p class="propertyinfo">15-20 Feb</p>
-                        <a href="" class="propertyprice"><strong>£3,756</strong> total</a>
+                        <p class="property-info">Professional Host</p>
+                        <p class="property-info">15-20 Feb</p>
+                        <a href="" class="property-price"><strong>£3,756</strong> total</a>
                     </div>
                 </div>
-                <div class="propertycard">
-                    <button class="guestfavourite">Guest favourite</button>
-                    <button class="favouriteheart">
+                <div class="property-card">
+                    <button class="guest-favourite">Guest favourite</button>
+                    <button class="favourite-heart">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 56px; width: 56px; stroke: var(--f-mkcy-f); stroke-width: 2; overflow: visible; stroke: #fff;">
                             <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
                         </svg>
                     </button>
                     <img src="https://a0.muscache.com/im/pictures/miso/Hosting-609161492165382333/original/90d03745-e550-49c3-891e-ec5b6dc40a75.jpeg?im_w=720">
-                    <div class="propertycardcontainer">
-                        <div class="propertycardheading">
-                            <p class="propertyheading">Tervuren, Belgium</p>
+                    <div class="property-card-container">
+                        <div class="property-card-heading">
+                            <p class="property-heading">Tervuren, Belgium</p>
                             <div class="rating">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 34 34" aria-hidden="true" role="presentation" focusable="false" style="display: inline-block; height: 32px; width: 32px; fill: #222;">
                                     <path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path>
@@ -195,38 +379,38 @@
                                 <span>4.87</span>
                             </div>
                         </div>
-                        <p class="propertyinfo">Individual Host</p>
-                        <p class="propertyinfo">7-12 Oct</p>
-                        <a href="" class="propertyprice"><strong>£753</strong> total</a>
+                        <p class="property-info">Individual Host</p>
+                        <p class="property-info">7-12 Oct</p>
+                        <a href="" class="property-price"><strong>£753</strong> total</a>
                     </div>
                 </div>
-                <div class="propertycard">
-                    <button class="favouriteheart">
+                <div class="property-card">
+                    <button class="favourite-heart">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 56px; width: 56px; stroke: var(--f-mkcy-f); stroke-width: 2; overflow: visible; stroke: #fff;">
                             <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
                         </svg>
                     </button>
                     <img src="https://a0.muscache.com/im/pictures/prohost-api/Hosting-699095541647431947/original/2c2221c3-d014-4b4f-a850-29ee47620304.jpeg?im_w=720">
-                    <div class="propertycardcontainer">
-                        <div class="propertycardheading">
-                            <p class="propertyheading">Devon, UK</p>
+                    <div class="property-card-container">
+                        <div class="property-card-heading">
+                            <p class="property-heading">Devon, UK</p>
                         </div>
-                        <p class="propertyinfo">Professional Host</p>
-                        <p class="propertyinfo">21-26 Jan</p>
-                        <a href="" class="propertyprice"><strong>£3,684</strong> total</a>
+                        <p class="property-info">Professional Host</p>
+                        <p class="property-info">21-26 Jan</p>
+                        <a href="" class="property-price"><strong>£3,684</strong> total</a>
                     </div>
                 </div>
-                <div class="propertycard">
-                    <button class="guestfavourite">Guest favourite</button>
-                    <button class="favouriteheart">
+                <div class="property-card">
+                    <button class="guest-favourite">Guest favourite</button>
+                    <button class="favourite-heart">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 56px; width: 56px; stroke: var(--f-mkcy-f); stroke-width: 2; overflow: visible; stroke: #fff;">
                             <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
                         </svg>
                     </button>
                     <img src="https://a0.muscache.com/im/pictures/2e5550b5-628f-46a6-ae3b-93495384c15e.jpg?im_w=720">
-                    <div class="propertycardcontainer">
-                        <div class="propertycardheading">
-                            <p class="propertyheading">Sutton, UK</p>
+                    <div class="property-card-container">
+                        <div class="property-card-heading">
+                            <p class="property-heading">Sutton, UK</p>
                             <div class="rating">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 34 34" aria-hidden="true" role="presentation" focusable="false" style="display: inline-block; height: 32px; width: 32px; fill: #222;">
                                     <path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path>
@@ -234,22 +418,22 @@
                                 <span>4.92</span>
                             </div>
                         </div>
-                        <p class="propertyinfo">Individual Host</p>
-                        <p class="propertyinfo">10-15 Apr</p>
-                        <a href="" class="propertyprice"><strong>£947</strong> total</a>
+                        <p class="property-info">Individual Host</p>
+                        <p class="property-info">10-15 Apr</p>
+                        <a href="" class="property-price"><strong>£947</strong> total</a>
                     </div>
                 </div>
-                <div class="propertycard">
-                    <button class="guestfavourite">Guest favourite</button>
-                    <button class="favouriteheart">
+                <div class="property-card">
+                    <button class="guest-favourite">Guest favourite</button>
+                    <button class="favourite-heart">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 56px; width: 56px; stroke: var(--f-mkcy-f); stroke-width: 2; overflow: visible; stroke: #fff;">
                             <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
                         </svg>
                     </button>
                     <img src="https://a0.muscache.com/im/pictures/c579efd0-3a7a-4132-8bbb-cf7eeadc9806.jpg?im_w=720">
-                    <div class="propertycardcontainer">
-                        <div class="propertycardheading">
-                            <p class="propertyheading">Pembroke, UK</p>
+                    <div class="property-card-container">
+                        <div class="property-card-heading">
+                            <p class="property-heading">Pembroke, UK</p>
                             <div class="rating">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 34 34" aria-hidden="true" role="presentation" focusable="false" style="display: inline-block; height: 32px; width: 32px; fill: #222;">
                                     <path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path>
@@ -257,21 +441,21 @@
                                 <span>4.95</span>
                             </div>
                         </div>
-                        <p class="propertyinfo">Individual Host</p>
-                        <p class="propertyinfo">10-15 Mar</p>
-                        <a href="" class="propertyprice"><strong>£819</strong> total</a>
+                        <p class="property-info">Individual Host</p>
+                        <p class="property-info">10-15 Mar</p>
+                        <a href="" class="property-price"><strong>£819</strong> total</a>
                     </div>
                 </div>
-                <div class="propertycard">
-                    <button class="favouriteheart">
+                <div class="property-card">
+                    <button class="favourite-heart">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 56px; width: 56px; stroke: var(--f-mkcy-f); stroke-width: 2; overflow: visible; stroke: #fff;">
                             <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
                         </svg>
                     </button>
                     <img src="https://a0.muscache.com/im/pictures/miso/Hosting-48974193/original/dfc94d55-d670-42db-bdb8-ffda4fb2996b.jpeg?im_w=720">
-                    <div class="propertycardcontainer">
-                        <div class="propertycardheading">
-                            <p class="propertyheading">Worstead, UK</p>
+                    <div class="property-card-container">
+                        <div class="property-card-heading">
+                            <p class="property-heading">Worstead, UK</p>
                             <div class="rating">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 34 34" aria-hidden="true" role="presentation" focusable="false" style="display: inline-block; height: 32px; width: 32px; fill: #222;">
                                     <path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path>
@@ -279,22 +463,22 @@
                                 <span>4.84</span>
                             </div>
                         </div>
-                        <p class="propertyinfo">Professional Host</p>
-                        <p class="propertyinfo">22-27 Feb</p>
-                        <a href="" class="propertyprice"><strong>£792</strong> total</a>
+                        <p class="property-info">Professional Host</p>
+                        <p class="property-info">22-27 Feb</p>
+                        <a href="" class="property-price"><strong>£792</strong> total</a>
                     </div>
                 </div>
-                <div class="propertycard">
-                    <button class="guestfavourite">Guest favourite</button>
-                    <button class="favouriteheart">
+                <div class="property-card">
+                    <button class="guest-favourite">Guest favourite</button>
+                    <button class="favourite-heart">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 56px; width: 56px; stroke: var(--f-mkcy-f); stroke-width: 2; overflow: visible; stroke: #fff;">
                             <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
                         </svg>
                     </button>
                     <img src="https://a0.muscache.com/im/pictures/2ce2f829-7965-479a-af98-c5a84824ce06.jpg?im_w=720">
-                    <div class="propertycardcontainer">
-                        <div class="propertycardheading">
-                            <p class="propertyheading">Canterbury, UK</p>
+                    <div class="property-card-container">
+                        <div class="property-card-heading">
+                            <p class="property-heading">Canterbury, UK</p>
                             <div class="rating">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 34 34" aria-hidden="true" role="presentation" focusable="false" style="display: inline-block; height: 32px; width: 32px; fill: #222;">
                                     <path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path>
@@ -302,22 +486,22 @@
                                 <span>4.98</span>
                             </div>
                         </div>
-                        <p class="propertyinfo">Professional Host</p>
-                        <p class="propertyinfo">26-31 Jan</p>
-                        <a href="" class="propertyprice"><strong>£2,046</strong> total</a>
+                        <p class="property-info">Professional Host</p>
+                        <p class="property-info">26-31 Jan</p>
+                        <a href="" class="property-price"><strong>£2,046</strong> total</a>
                     </div>
                 </div>
-                <div class="propertycard">
-                    <button class="guestfavourite">Guest favourite</button>
-                    <button class="favouriteheart">
+                <div class="property-card">
+                    <button class="guest-favourite">Guest favourite</button>
+                    <button class="favourite-heart">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 56px; width: 56px; stroke: var(--f-mkcy-f); stroke-width: 2; overflow: visible; stroke: #fff;">
                             <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
                         </svg>
                     </button>
                     <img src="https://a0.muscache.com/im/pictures/25e609b3-332f-4083-b886-b801b8d1a755.jpg?im_w=720">
-                    <div class="propertycardcontainer">
-                        <div class="propertycardheading">
-                            <p class="propertyheading">Pembrokeshire, UK</p>
+                    <div class="property-card-container">
+                        <div class="property-card-heading">
+                            <p class="property-heading">Pembrokeshire, UK</p>
                             <div class="rating">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 34 34" aria-hidden="true" role="presentation" focusable="false" style="display: inline-block; height: 32px; width: 32px; fill: #222;">
                                     <path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path>
@@ -325,21 +509,21 @@
                                 <span>4.99</span>
                             </div>
                         </div>
-                        <p class="propertyinfo">Individual Host</p>
-                        <p class="propertyinfo">21-26 Jan</p>
-                        <a href="" class="propertyprice"><strong>£848</strong> total</a>
+                        <p class="property-info">Individual Host</p>
+                        <p class="property-info">21-26 Jan</p>
+                        <a href="" class="property-price"><strong>£848</strong> total</a>
                     </div>
                 </div>
-                <div class="propertycard">
-                    <button class="favouriteheart">
+                <div class="property-card">
+                    <button class="favourite-heart">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 56px; width: 56px; stroke: var(--f-mkcy-f); stroke-width: 2; overflow: visible; stroke: #fff;">
                             <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
                         </svg>
                     </button>
                     <img src="https://a0.muscache.com/im/pictures/miso/Hosting-13126329/original/012c2934-0265-48b2-af94-a3b115eddba1.jpeg?im_w=720">
-                    <div class="propertycardcontainer">
-                        <div class="propertycardheading">
-                            <p class="propertyheading">The Haven, Billingshurst, UK</p>
+                    <div class="property-card-container">
+                        <div class="property-card-heading">
+                            <p class="property-heading">The Haven, Billingshurst, UK</p>
                             <div class="rating">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 34 34" aria-hidden="true" role="presentation" focusable="false" style="display: inline-block; height: 32px; width: 32px; fill: #222;">
                                     <path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path>
@@ -347,21 +531,21 @@
                                 <span>4.9</span>
                             </div>
                         </div>
-                        <p class="propertyinfo">Individual Host</p>
-                        <p class="propertyinfo">21-26 Jan</p>
-                        <a href="" class="propertyprice"><strong>£819</strong> total</a>
+                        <p class="property-info">Individual Host</p>
+                        <p class="property-info">21-26 Jan</p>
+                        <a href="" class="property-price"><strong>£819</strong> total</a>
                     </div>
                 </div>
-                <div class="propertycard">
-                    <button class="favouriteheart">
+                <div class="property-card">
+                    <button class="favourite-heart">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 56px; width: 56px; stroke: var(--f-mkcy-f); stroke-width: 2; overflow: visible; stroke: #fff;">
                             <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
                         </svg>
                     </button>
                     <img src="https://a0.muscache.com/im/pictures/miso/Hosting-27567247/original/7ef08899-92b2-44b6-bd8b-ba9a1b13e45e.jpeg?im_w=720">
-                    <div class="propertycardcontainer">
-                        <div class="propertycardheading">
-                            <p class="propertyheading">Preston, UK</p>
+                    <div class="property-card-container">
+                        <div class="property-card-heading">
+                            <p class="property-heading">Preston, UK</p>
                             <div class="rating">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 34 34" aria-hidden="true" role="presentation" focusable="false" style="display: inline-block; height: 32px; width: 32px; fill: #222;">
                                     <path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path>
@@ -369,22 +553,22 @@
                                 <span>4.88</span>
                             </div>
                         </div>
-                        <p class="propertyinfo">Professional Host</p>
-                        <p class="propertyinfo">17-22 Jan</p>
-                        <a href="" class="propertyprice"><strong>£778</strong> total</a>
+                        <p class="property-info">Professional Host</p>
+                        <p class="property-info">17-22 Jan</p>
+                        <a href="" class="property-price"><strong>£778</strong> total</a>
                     </div>
                 </div>
-                <div class="propertycard">
-                    <button class="guestfavourite">Guest favourite</button>
-                    <button class="favouriteheart">
+                <div class="property-card">
+                    <button class="guest-favourite">Guest favourite</button>
+                    <button class="favourite-heart">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 56px; width: 56px; stroke: var(--f-mkcy-f); stroke-width: 2; overflow: visible; stroke: #fff;">
                             <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
                         </svg>
                     </button>
                     <img src="https://a0.muscache.com/im/pictures/2215aa5c-f8b4-4295-9fa2-e33b693dbf8e.jpg?im_w=720">
-                    <div class="propertycardcontainer">
-                        <div class="propertycardheading">
-                            <p class="propertyheading">Hatherton, UK</p>
+                    <div class="property-card-container">
+                        <div class="property-card-heading">
+                            <p class="property-heading">Hatherton, UK</p>
                             <div class="rating">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 34 34" aria-hidden="true" role="presentation" focusable="false" style="display: inline-block; height: 32px; width: 32px; fill: #222;">
                                     <path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path>
@@ -392,22 +576,22 @@
                                 <span>4.95</span>
                             </div>
                         </div>
-                        <p class="propertyinfo">Individual Host</p>
-                        <p class="propertyinfo">28 Jan - 2 Feb</p>
-                        <a href="" class="propertyprice"><strong>£351</strong> total</a>
+                        <p class="property-info">Individual Host</p>
+                        <p class="property-info">28 Jan - 2 Feb</p>
+                        <a href="" class="property-price"><strong>£351</strong> total</a>
                     </div>
                 </div>
-                <div class="propertycard">
-                    <button class="guestfavourite">Guest favourite</button>
-                    <button class="favouriteheart">
+                <div class="property-card">
+                    <button class="guest-favourite">Guest favourite</button>
+                    <button class="favourite-heart">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 56px; width: 56px; stroke: var(--f-mkcy-f); stroke-width: 2; overflow: visible; stroke: #fff;">
                             <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
                         </svg>
                     </button>
                     <img src="https://a0.muscache.com/im/pictures/4d36806c-a68e-4d98-98d0-722fa478ed51.jpg?im_w=720">
-                    <div class="propertycardcontainer">
-                        <div class="propertycardheading">
-                            <p class="propertyheading">Licolnshire, UK</p>
+                    <div class="property-card-container">
+                        <div class="property-card-heading">
+                            <p class="property-heading">Licolnshire, UK</p>
                             <div class="rating">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 34 34" aria-hidden="true" role="presentation" focusable="false" style="display: inline-block; height: 32px; width: 32px; fill: #222;">
                                     <path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path>
@@ -415,38 +599,38 @@
                                 <span>4.89</span>
                             </div>
                         </div>
-                        <p class="propertyinfo">Professional Host</p>
-                        <p class="propertyinfo">18-23 Jan</p>
-                        <a href="" class="propertyprice"><strong>£403</strong> total</a>
+                        <p class="property-info">Professional Host</p>
+                        <p class="property-info">18-23 Jan</p>
+                        <a href="" class="property-price"><strong>£403</strong> total</a>
                     </div>
                 </div>
-                <div class="propertycard">
-                    <button class="favouriteheart">
+                <div class="property-card">
+                    <button class="favourite-heart">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 56px; width: 56px; stroke: var(--f-mkcy-f); stroke-width: 2; overflow: visible; stroke: #fff;">
                             <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
                         </svg>
                     </button>
                     <img src="https://a0.muscache.com/im/pictures/0dfd154b-cbc5-4a41-bed7-59779f150dd6.jpg?im_w=720">
-                    <div class="propertycardcontainer">
-                        <div class="propertycardheading">
-                            <p class="propertyheading">Cockfield, UK</p>
+                    <div class="property-card-container">
+                        <div class="property-card-heading">
+                            <p class="property-heading">Cockfield, UK</p>
                         </div>
-                        <p class="propertyinfo">Professional Host</p>
-                        <p class="propertyinfo">21-26 Apr</p>
-                        <a href="" class="propertyprice"><strong>£2,888</strong> total</a>
+                        <p class="property-info">Professional Host</p>
+                        <p class="property-info">21-26 Apr</p>
+                        <a href="" class="property-price"><strong>£2,888</strong> total</a>
                     </div>
                 </div>
-                <div class="propertycard">
-                    <button class="guestfavourite">Guest favourite</button>
-                    <button class="favouriteheart">
+                <div class="property-card">
+                    <button class="guest-favourite">Guest favourite</button>
+                    <button class="favourite-heart">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 56px; width: 56px; stroke: var(--f-mkcy-f); stroke-width: 2; overflow: visible; stroke: #fff;">
                             <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
                         </svg>
                     </button>
                     <img src="https://a0.muscache.com/im/pictures/19414d6a-8471-4088-8ea3-ba034acc87ca.jpg?im_w=720">
-                    <div class="propertycardcontainer">
-                        <div class="propertycardheading">
-                            <p class="propertyheading">Maidenwells, UK</p>
+                    <div class="property-card-container">
+                        <div class="property-card-heading">
+                            <p class="property-heading">Maidenwells, UK</p>
                             <div class="rating">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 34 34" aria-hidden="true" role="presentation" focusable="false" style="display: inline-block; height: 32px; width: 32px; fill: #222;">
                                     <path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path>
@@ -454,22 +638,22 @@
                                 <span>4.96</span>
                             </div>
                         </div>
-                        <p class="propertyinfo">Individual Host</p>
-                        <p class="propertyinfo">30 Jan - 4 Feb</p>
-                        <a href="" class="propertyprice"><strong>£807</strong> total</a>
+                        <p class="property-info">Individual Host</p>
+                        <p class="property-info">30 Jan - 4 Feb</p>
+                        <a href="" class="property-price"><strong>£807</strong> total</a>
                     </div>
                 </div>
-                <div class="propertycard">
-                    <button class="guestfavourite">Guest favourite</button>
-                    <button class="favouriteheart">
+                <div class="property-card">
+                    <button class="guest-favourite">Guest favourite</button>
+                    <button class="favourite-heart">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 56px; width: 56px; stroke: var(--f-mkcy-f); stroke-width: 2; overflow: visible; stroke: #fff;">
                             <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
                         </svg>
                     </button>
                     <img src="https://a0.muscache.com/im/pictures/1db57275-c036-4dbf-b896-32ee22253e48.jpg?im_w=720">
-                    <div class="propertycardcontainer">
-                        <div class="propertycardheading">
-                            <p class="propertyheading">Cheshire East, UK</p>
+                    <div class="property-card-container">
+                        <div class="property-card-heading">
+                            <p class="property-heading">Cheshire East, UK</p>
                             <div class="rating">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 34 34" aria-hidden="true" role="presentation" focusable="false" style="display: inline-block; height: 32px; width: 32px; fill: #222;">
                                     <path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path>
@@ -477,21 +661,21 @@
                                 <span>4.98</span>
                             </div>
                         </div>
-                        <p class="propertyinfo">Individual Host</p>
-                        <p class="propertyinfo">19-24 May</p>
-                        <a href="" class="propertyprice"><strong>£555</strong> total</a>
+                        <p class="property-info">Individual Host</p>
+                        <p class="property-info">19-24 May</p>
+                        <a href="" class="property-price"><strong>£555</strong> total</a>
                     </div>
                 </div>
-                <div class="propertycard">
-                    <button class="favouriteheart">
+                <div class="property-card">
+                    <button class="favourite-heart">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 56px; width: 56px; stroke: var(--f-mkcy-f); stroke-width: 2; overflow: visible; stroke: #fff;">
                             <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
                         </svg>
                     </button>
                     <img src="https://a0.muscache.com/im/pictures/7cbb637b-23b9-47ad-a3c3-3d886ab2cc27.jpg?im_w=720">
-                    <div class="propertycardcontainer">
-                        <div class="propertycardheading">
-                            <p class="propertyheading">Somerset, UK</p>
+                    <div class="property-card-container">
+                        <div class="property-card-heading">
+                            <p class="property-heading">Somerset, UK</p>
                             <div class="rating">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 34 34" aria-hidden="true" role="presentation" focusable="false" style="display: inline-block; height: 32px; width: 32px; fill: #222;">
                                     <path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path>
@@ -499,22 +683,22 @@
                                 <span>4.85</span>
                             </div>
                         </div>
-                        <p class="propertyinfo">Professional Host</p>
-                        <p class="propertyinfo">31 Mar - 5 Apr</p>
-                        <a href="" class="propertyprice"><strong>£761</strong> total</a>
+                        <p class="property-info">Professional Host</p>
+                        <p class="property-info">31 Mar - 5 Apr</p>
+                        <a href="" class="property-price"><strong>£761</strong> total</a>
                     </div>
                 </div>
-                <div class="propertycard">
-                    <button class="guestfavourite">Guest favourite</button>
-                    <button class="favouriteheart">
+                <div class="property-card">
+                    <button class="guest-favourite">Guest favourite</button>
+                    <button class="favourite-heart">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 56px; width: 56px; stroke: var(--f-mkcy-f); stroke-width: 2; overflow: visible; stroke: #fff;">
                             <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
                         </svg>
                     </button>
                     <img src="https://a0.muscache.com/im/pictures/22533822/c445bd79_original.jpg?im_w=720">
-                    <div class="propertycardcontainer">
-                        <div class="propertycardheading">
-                            <p class="propertyheading">Benenden, UK</p>
+                    <div class="property-card-container">
+                        <div class="property-card-heading">
+                            <p class="property-heading">Benenden, UK</p>
                             <div class="rating">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 34 34" aria-hidden="true" role="presentation" focusable="false" style="display: inline-block; height: 32px; width: 32px; fill: #222;">
                                     <path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path>
@@ -522,22 +706,22 @@
                                 <span>4.99</span>
                             </div>
                         </div>
-                        <p class="propertyinfo">Professional Host</p>
-                        <p class="propertyinfo">21-26 Jan</p>
-                        <a href="" class="propertyprice"><strong>£1,228</strong> total</a>
+                        <p class="property-info">Professional Host</p>
+                        <p class="property-info">21-26 Jan</p>
+                        <a href="" class="property-price"><strong>£1,228</strong> total</a>
                     </div>
                 </div>
-                <div class="propertycard">
-                    <button class="guestfavourite">Guest favourite</button>
-                    <button class="favouriteheart">
+                <div class="property-card">
+                    <button class="guest-favourite">Guest favourite</button>
+                    <button class="favourite-heart">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 56px; width: 56px; stroke: var(--f-mkcy-f); stroke-width: 2; overflow: visible; stroke: #fff;">
                             <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
                         </svg>
                     </button>
                     <img src="https://a0.muscache.com/im/pictures/miso/Hosting-32663724/original/a3ffa114-1f3a-43df-8829-2622cf9d6a4a.jpeg?im_w=720">
-                    <div class="propertycardcontainer">
-                        <div class="propertycardheading">
-                            <p class="propertyheading">Churchstanton, UK</p>
+                    <div class="property-card-container">
+                        <div class="property-card-heading">
+                            <p class="property-heading">Churchstanton, UK</p>
                             <div class="rating">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 34 34" aria-hidden="true" role="presentation" focusable="false" style="display: inline-block; height: 32px; width: 32px; fill: #222;">
                                     <path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path>
@@ -545,22 +729,22 @@
                                 <span>4.99</span>
                             </div>
                         </div>
-                        <p class="propertyinfo">Individual Host</p>
-                        <p class="propertyinfo">25-30 Jan</p>
-                        <a href="" class="propertyprice"><strong>£988</strong> total</a>
+                        <p class="property-info">Individual Host</p>
+                        <p class="property-info">25-30 Jan</p>
+                        <a href="" class="property-price"><strong>£988</strong> total</a>
                     </div>
                 </div>
-                <div class="propertycard">
-                    <button class="guestfavourite">Guest favourite</button>
-                    <button class="favouriteheart">
+                <div class="property-card">
+                    <button class="guest-favourite">Guest favourite</button>
+                    <button class="favourite-heart">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 56px; width: 56px; stroke: var(--f-mkcy-f); stroke-width: 2; overflow: visible; stroke: #fff;">
                             <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
                         </svg>
                     </button>
                     <img src="https://a0.muscache.com/im/pictures/be901062-e401-4f58-89fd-ab013ef7f618.jpg?im_w=720">
-                    <div class="propertycardcontainer">
-                        <div class="propertycardheading">
-                            <p class="propertyheading">Langford, UK</p>
+                    <div class="property-card-container">
+                        <div class="property-card-heading">
+                            <p class="property-heading">Langford, UK</p>
                             <div class="rating">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 34 34" aria-hidden="true" role="presentation" focusable="false" style="display: inline-block; height: 32px; width: 32px; fill: #222;">
                                     <path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path>
@@ -568,22 +752,22 @@
                                 <span>4.98</span>
                             </div>
                         </div>
-                        <p class="propertyinfo">Individual Host</p>
-                        <p class="propertyinfo">25-30 May</p>
-                        <a href="" class="propertyprice"><strong>£382</strong> total</a>
+                        <p class="property-info">Individual Host</p>
+                        <p class="property-info">25-30 May</p>
+                        <a href="" class="property-price"><strong>£382</strong> total</a>
                     </div>
                 </div>
-                <div class="propertycard">
-                    <button class="guestfavourite">Guest favourite</button>
-                    <button class="favouriteheart">
+                <div class="property-card">
+                    <button class="guest-favourite">Guest favourite</button>
+                    <button class="favourite-heart">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 56px; width: 56px; stroke: var(--f-mkcy-f); stroke-width: 2; overflow: visible; stroke: #fff;">
                             <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
                         </svg>
                     </button>
                     <img src="https://a0.muscache.com/im/pictures/2c2e11e6-f323-434f-801c-925082d37ac8.jpg?im_w=720">
-                    <div class="propertycardcontainer">
-                        <div class="propertycardheading">
-                            <p class="propertyheading">West Yorkshire, UK</p>
+                    <div class="property-card-container">
+                        <div class="property-card-heading">
+                            <p class="property-heading">West Yorkshire, UK</p>
                             <div class="rating">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 34 34" aria-hidden="true" role="presentation" focusable="false" style="display: inline-block; height: 32px; width: 32px; fill: #222;">
                                     <path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path>
@@ -591,22 +775,22 @@
                                 <span>4.98</span>
                             </div>
                         </div>
-                        <p class="propertyinfo">Individual Host</p>
-                        <p class="propertyinfo">21-26 Jan</p>
-                        <a href="" class="propertyprice"><strong>£795</strong> total</a>
+                        <p class="property-info">Individual Host</p>
+                        <p class="property-info">21-26 Jan</p>
+                        <a href="" class="property-price"><strong>£795</strong> total</a>
                     </div>
                 </div>
-                <div class="propertycard">
-                    <button class="guestfavourite">Guest favourite</button>
-                    <button class="favouriteheart">
+                <div class="property-card">
+                    <button class="guest-favourite">Guest favourite</button>
+                    <button class="favourite-heart">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 56px; width: 56px; stroke: var(--f-mkcy-f); stroke-width: 2; overflow: visible; stroke: #fff;">
                             <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
                         </svg>
                     </button>
                     <img src="https://a0.muscache.com/im/pictures/1b3e0b8b-1434-4f7b-ac55-d219aa6fd107.jpg?im_w=720">
-                    <div class="propertycardcontainer">
-                        <div class="propertycardheading">
-                            <p class="propertyheading">Drimnin, UK</p>
+                    <div class="property-card-container">
+                        <div class="property-card-heading">
+                            <p class="property-heading">Drimnin, UK</p>
                             <div class="rating">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 34 34" aria-hidden="true" role="presentation" focusable="false" style="display: inline-block; height: 32px; width: 32px; fill: #222;">
                                     <path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path>
@@ -614,22 +798,22 @@
                                 <span>4.96</span>
                             </div>
                         </div>
-                        <p class="propertyinfo">Individual Host</p>
-                        <p class="propertyinfo">28 Jan - 2 Feb</p>
-                        <a href="" class="propertyprice"><strong>£994</strong> total</a>
+                        <p class="property-info">Individual Host</p>
+                        <p class="property-info">28 Jan - 2 Feb</p>
+                        <a href="" class="property-price"><strong>£994</strong> total</a>
                     </div>
                 </div>
-                <div class="propertycard">
-                    <button class="guestfavourite">Guest favourite</button>
-                    <button class="favouriteheart">
+                <div class="property-card">
+                    <button class="guest-favourite">Guest favourite</button>
+                    <button class="favourite-heart">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 56px; width: 56px; stroke: var(--f-mkcy-f); stroke-width: 2; overflow: visible; stroke: #fff;">
                             <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
                         </svg>
                     </button>
                     <img src="https://a0.muscache.com/im/pictures/af175b08-e5e0-4880-b87c-d40c84e9833d.jpg?im_w=720">
-                    <div class="propertycardcontainer">
-                        <div class="propertycardheading">
-                            <p class="propertyheading">Pennington, UK</p>
+                    <div class="property-card-container">
+                        <div class="property-card-heading">
+                            <p class="property-heading">Pennington, UK</p>
                             <div class="rating">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 34 34" aria-hidden="true" role="presentation" focusable="false" style="display: inline-block; height: 32px; width: 32px; fill: #222;">
                                     <path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path>
@@ -637,21 +821,21 @@
                                 <span>4.95</span>
                             </div>
                         </div>
-                        <p class="propertyinfo">Individual Host</p>
-                        <p class="propertyinfo">1-6 Apr</p>
-                        <a href="" class="propertyprice"><strong>£877</strong> total</a>
+                        <p class="property-info">Individual Host</p>
+                        <p class="property-info">1-6 Apr</p>
+                        <a href="" class="property-price"><strong>£877</strong> total</a>
                     </div>
                 </div>
-                <div class="propertycard">
-                    <button class="favouriteheart">
+                <div class="property-card">
+                    <button class="favourite-heart">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 56px; width: 56px; stroke: var(--f-mkcy-f); stroke-width: 2; overflow: visible; stroke: #fff;">
                             <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
                         </svg>
                     </button>
                     <img src="https://a0.muscache.com/im/pictures/miso/Hosting-32081638/original/f181cbd0-07a1-4250-b0c0-83798b962855.jpeg?im_w=720">
-                    <div class="propertycardcontainer">
-                        <div class="propertycardheading">
-                            <p class="propertyheading">Pembridge, UK</p>
+                    <div class="property-card-container">
+                        <div class="property-card-heading">
+                            <p class="property-heading">Pembridge, UK</p>
                             <div class="rating">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 34 34" aria-hidden="true" role="presentation" focusable="false" style="display: inline-block; height: 32px; width: 32px; fill: #222;">
                                     <path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path>
@@ -659,21 +843,21 @@
                                 <span>4.76</span>
                             </div>
                         </div>
-                        <p class="propertyinfo">Professional Host</p>
-                        <p class="propertyinfo">17-22 Jan</p>
-                        <a href="" class="propertyprice"><strong>£1,193</strong> total</a>
+                        <p class="property-info">Professional Host</p>
+                        <p class="property-info">17-22 Jan</p>
+                        <a href="" class="property-price"><strong>£1,193</strong> total</a>
                     </div>
                 </div>
-                <div class="propertycard">
-                    <button class="favouriteheart">
+                <div class="property-card">
+                    <button class="favourite-heart">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 56px; width: 56px; stroke: var(--f-mkcy-f); stroke-width: 2; overflow: visible; stroke: #fff;">
                             <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
                         </svg>
                     </button>
                     <img src="https://a0.muscache.com/im/pictures/6f362e2c-f084-462f-8434-5d3224498bfb.jpg?im_w=720">
-                    <div class="propertycardcontainer">
-                        <div class="propertycardheading">
-                            <p class="propertyheading">East Meon, UK</p>
+                    <div class="property-card-container">
+                        <div class="property-card-heading">
+                            <p class="property-heading">East Meon, UK</p>
                             <div class="rating">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 34 34" aria-hidden="true" role="presentation" focusable="false" style="display: inline-block; height: 32px; width: 32px; fill: #222;">
                                     <path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path>
@@ -681,22 +865,22 @@
                                 <span>4.88</span>
                             </div>
                         </div>
-                        <p class="propertyinfo">Individual Host</p>
-                        <p class="propertyinfo">21-26 Jan</p>
-                        <a href="" class="propertyprice"><strong>£700</strong> total</a>
+                        <p class="property-info">Individual Host</p>
+                        <p class="property-info">21-26 Jan</p>
+                        <a href="" class="property-price"><strong>£700</strong> total</a>
                     </div>
                 </div>
-                <div class="propertycard">
-                    <button class="guestfavourite">Guest favourite</button>
-                    <button class="favouriteheart">
+                <div class="property-card">
+                    <button class="guest-favourite">Guest favourite</button>
+                    <button class="favourite-heart">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 56px; width: 56px; stroke: var(--f-mkcy-f); stroke-width: 2; overflow: visible; stroke: #fff;">
                             <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
                         </svg>
                     </button>
                     <img src="https://a0.muscache.com/im/pictures/cfb1e82f-268e-4a99-b113-19814689de52.jpg?im_w=720">
-                    <div class="propertycardcontainer">
-                        <div class="propertycardheading">
-                            <p class="propertyheading">East Lothian Council, UK</p>
+                    <div class="property-card-container">
+                        <div class="property-card-heading">
+                            <p class="property-heading">East Lothian Council, UK</p>
                             <div class="rating">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 34 34" aria-hidden="true" role="presentation" focusable="false" style="display: inline-block; height: 32px; width: 32px; fill: #222;">
                                     <path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path>
@@ -704,21 +888,21 @@
                                 <span>4.92</span>
                             </div>
                         </div>
-                        <p class="propertyinfo">Professional Host</p>
-                        <p class="propertyinfo">28 Jan - 2 Feb</p>
-                        <a href="" class="propertyprice"><strong>£625</strong> total</a>
+                        <p class="property-info">Professional Host</p>
+                        <p class="property-info">28 Jan - 2 Feb</p>
+                        <a href="" class="property-price"><strong>£625</strong> total</a>
                     </div>
                 </div>
-                <div class="propertycard">
-                    <button class="favouriteheart">
+                <div class="property-card">
+                    <button class="favourite-heart">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 56px; width: 56px; stroke: var(--f-mkcy-f); stroke-width: 2; overflow: visible; stroke: #fff;">
                             <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
                         </svg>
                     </button>
                     <img src="https://a0.muscache.com/im/pictures/1276d996-706c-41c9-bc47-4a6b706fa482.jpg?im_w=720">
-                    <div class="propertycardcontainer">
-                        <div class="propertycardheading">
-                            <p class="propertyheading">Llan-y-pwll, UK</p>
+                    <div class="property-card-container">
+                        <div class="property-card-heading">
+                            <p class="property-heading">Llan-y-pwll, UK</p>
                             <div class="rating">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 34 34" aria-hidden="true" role="presentation" focusable="false" style="display: inline-block; height: 32px; width: 32px; fill: #222;">
                                     <path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path>
@@ -726,21 +910,21 @@
                                 <span>4.83</span>
                             </div>
                         </div>
-                        <p class="propertyinfo">Individual Host</p>
-                        <p class="propertyinfo">16-21 Jan</p>
-                        <a href="" class="propertyprice"><strong>£819</strong> total</a>
+                        <p class="property-info">Individual Host</p>
+                        <p class="property-info">16-21 Jan</p>
+                        <a href="" class="property-price"><strong>£819</strong> total</a>
                     </div>
                 </div>
-                <div class="propertycard">
-                    <button class="favouriteheart">
+                <div class="property-card">
+                    <button class="favourite-heart">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 56px; width: 56px; stroke: var(--f-mkcy-f); stroke-width: 2; overflow: visible; stroke: #fff;">
                             <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
                         </svg>
                     </button>
                     <img src="https://a0.muscache.com/im/pictures/bdcf791f-6be2-4ff6-929b-39e5d3d6e59f.jpg?im_w=720">
-                    <div class="propertycardcontainer">
-                        <div class="propertycardheading">
-                            <p class="propertyheading">West Sussex, UK</p>
+                    <div class="property-card-container">
+                        <div class="property-card-heading">
+                            <p class="property-heading">West Sussex, UK</p>
                             <div class="rating">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 34 34" aria-hidden="true" role="presentation" focusable="false" style="display: inline-block; height: 32px; width: 32px; fill: #222;">
                                     <path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path>
@@ -748,22 +932,22 @@
                                 <span>4.67</span>
                             </div>
                         </div>
-                        <p class="propertyinfo">Professional Host</p>
-                        <p class="propertyinfo">22-27 Jan</p>
-                        <a href="" class="propertyprice"><strong>£838</strong> total</a>
+                        <p class="property-info">Professional Host</p>
+                        <p class="property-info">22-27 Jan</p>
+                        <a href="" class="property-price"><strong>£838</strong> total</a>
                     </div>
                 </div>
-                <div class="propertycard">
-                    <button class="guestfavourite">Guest favourite</button>
-                    <button class="favouriteheart">
+                <div class="property-card">
+                    <button class="guest-favourite">Guest favourite</button>
+                    <button class="favourite-heart">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 56px; width: 56px; stroke: var(--f-mkcy-f); stroke-width: 2; overflow: visible; stroke: #fff;">
                             <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
                         </svg>
                     </button>
                     <img src="https://a0.muscache.com/im/pictures/24416f22-2d2d-403d-9549-0796856567e8.jpg?im_w=720">
-                    <div class="propertycardcontainer">
-                        <div class="propertycardheading">
-                            <p class="propertyheading">Wooton Fitzpaine, UK</p>
+                    <div class="property-card-container">
+                        <div class="property-card-heading">
+                            <p class="property-heading">Wooton Fitzpaine, UK</p>
                             <div class="rating">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 34 34" aria-hidden="true" role="presentation" focusable="false" style="display: inline-block; height: 32px; width: 32px; fill: #222;">
                                     <path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path>
@@ -771,22 +955,22 @@
                                 <span>4.96</span>
                             </div>
                         </div>
-                        <p class="propertyinfo">Individual Host</p>
-                        <p class="propertyinfo">16-21 Jan</p>
-                        <a href="" class="propertyprice"><strong>£585</strong> total</a>
+                        <p class="property-info">Individual Host</p>
+                        <p class="property-info">16-21 Jan</p>
+                        <a href="" class="property-price"><strong>£585</strong> total</a>
                     </div>
                 </div>
-                <div class="propertycard">
-                    <button class="guestfavourite">Guest favourite</button>
-                    <button class="favouriteheart">
+                <div class="property-card">
+                    <button class="guest-favourite">Guest favourite</button>
+                    <button class="favourite-heart">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 56px; width: 56px; stroke: var(--f-mkcy-f); stroke-width: 2; overflow: visible; stroke: #fff;">
                             <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
                         </svg>
                     </button>
                     <img src="https://a0.muscache.com/im/pictures/prohost-api/Hosting-635105851919272600/original/a6eb6728-1a54-48d8-93e1-89988fd5b587.jpeg?im_w=720">
-                    <div class="propertycardcontainer">
-                        <div class="propertycardheading">
-                            <p class="propertyheading">Lincolnshire, UK</p>
+                    <div class="property-card-container">
+                        <div class="property-card-heading">
+                            <p class="property-heading">Lincolnshire, UK</p>
                             <div class="rating">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 34 34" aria-hidden="true" role="presentation" focusable="false" style="display: inline-block; height: 32px; width: 32px; fill: #222;">
                                     <path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path>
@@ -794,21 +978,21 @@
                                 <span>5.0</span>
                             </div>
                         </div>
-                        <p class="propertyinfo">Professional Host</p>
-                        <p class="propertyinfo">22-27 Jan</p>
-                        <a href="" class="propertyprice"><strong>£633</strong> total</a>
+                        <p class="property-info">Professional Host</p>
+                        <p class="property-info">22-27 Jan</p>
+                        <a href="" class="property-price"><strong>£633</strong> total</a>
                     </div>
                 </div>
-                <div class="propertycard">
-                    <button class="favouriteheart">
+                <div class="property-card">
+                    <button class="favourite-heart">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 56px; width: 56px; stroke: var(--f-mkcy-f); stroke-width: 2; overflow: visible; stroke: #fff;">
                             <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
                         </svg>
                     </button>
                     <img src="https://a0.muscache.com/im/pictures/369f9a41-ed52-4938-97d6-5117781074fb.jpg?im_w=720">
-                    <div class="propertycardcontainer">
-                        <div class="propertycardheading">
-                            <p class="propertyheading">Medstead, UK</p>
+                    <div class="property-card-container">
+                        <div class="property-card-heading">
+                            <p class="property-heading">Medstead, UK</p>
                             <div class="rating">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 34 34" aria-hidden="true" role="presentation" focusable="false" style="display: inline-block; height: 32px; width: 32px; fill: #222;">
                                     <path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path>
@@ -816,22 +1000,22 @@
                             <span>4.95</span>
                             </div>
                         </div>
-                        <p class="propertyinfo">Individual Host</p>
-                        <p class="propertyinfo">10-15 Mar</p>
-                        <a href="" class="propertyprice"><strong>£1,111</strong> total</a>
+                        <p class="property-info">Individual Host</p>
+                        <p class="property-info">10-15 Mar</p>
+                        <a href="" class="property-price"><strong>£1,111</strong> total</a>
                     </div>
                 </div>
-                <div class="propertycard">
-                    <button class="guestfavourite">Guest favourite</button>
-                    <button class="favouriteheart">
+                <div class="property-card">
+                    <button class="guest-favourite">Guest favourite</button>
+                    <button class="favourite-heart">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 56px; width: 56px; stroke: var(--f-mkcy-f); stroke-width: 2; overflow: visible; stroke: #fff;">
                             <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
                         </svg>
                     </button>
                     <img src="https://a0.muscache.com/im/pictures/f8693514-0a28-45f2-b9af-a845fe852214.jpg?im_w=720">
-                    <div class="propertycardcontainer">
-                        <div class="propertycardheading">
-                            <p class="propertyheading">Binegar, UK</p>
+                    <div class="property-card-container">
+                        <div class="property-card-heading">
+                            <p class="property-heading">Binegar, UK</p>
                             <div class="rating">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 34 34" aria-hidden="true" role="presentation" focusable="false" style="display: inline-block; height: 32px; width: 32px; fill: #222;">
                                     <path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path>
@@ -839,22 +1023,22 @@
                                 <span>4.99</span>
                             </div>
                         </div>
-                        <p class="propertyinfo">Professional Host</p>
-                        <p class="propertyinfo">25 Feb - 1 Mar</p>
-                        <a href="" class="propertyprice"><strong>£1,061</strong> total</a>
+                        <p class="property-info">Professional Host</p>
+                        <p class="property-info">25 Feb - 1 Mar</p>
+                        <a href="" class="property-price"><strong>£1,061</strong> total</a>
                     </div>
                 </div>
-                <div class="propertycard">
-                    <button class="guestfavourite">Guest favourite</button>
-                    <button class="favouriteheart">
+                <div class="property-card">
+                    <button class="guest-favourite">Guest favourite</button>
+                    <button class="favourite-heart">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 56px; width: 56px; stroke: var(--f-mkcy-f); stroke-width: 2; overflow: visible; stroke: #fff;">
                             <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
                         </svg>
                     </button>
                     <img src="https://a0.muscache.com/im/pictures/miso/Hosting-4302955/original/cc9a955c-4c6d-4782-a9f7-6ac74e4399a6.jpeg?im_w=720">
-                    <div class="propertycardcontainer">
-                        <div class="propertycardheading">
-                            <p class="propertyheading">Cirencester, UK</p>
+                    <div class="property-card-container">
+                        <div class="property-card-heading">
+                            <p class="property-heading">Cirencester, UK</p>
                             <div class="rating">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 34 34" aria-hidden="true" role="presentation" focusable="false" style="display: inline-block; height: 32px; width: 32px; fill: #222;">
                                     <path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path>
@@ -862,22 +1046,22 @@
                                 <span>4.89</span>
                             </div>
                         </div>
-                        <p class="propertyinfo">Individual Host</p>
-                        <p class="propertyinfo">19-24 Jan</p>
-                        <a href="" class="propertyprice"><strong>£709</strong> total</a>
+                        <p class="property-info">Individual Host</p>
+                        <p class="property-info">19-24 Jan</p>
+                        <a href="" class="property-price"><strong>£709</strong> total</a>
                     </div>
                 </div>
-                <div class="propertycard">
-                    <button class="guestfavourite">Guest favourite</button>
-                    <button class="favouriteheart">
+                <div class="property-card">
+                    <button class="guest-favourite">Guest favourite</button>
+                    <button class="favourite-heart">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 56px; width: 56px; stroke: var(--f-mkcy-f); stroke-width: 2; overflow: visible; stroke: #fff;">
                             <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
                         </svg>
                     </button>
                     <img src="https://a0.muscache.com/im/pictures/77517035/9ba73e73_original.jpg?im_w=720">
-                    <div class="propertycardcontainer">
-                        <div class="propertycardheading">
-                            <p class="propertyheading">Williton, UK</p>
+                    <div class="property-card-container">
+                        <div class="property-card-heading">
+                            <p class="property-heading">Williton, UK</p>
                             <div class="rating">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 34 34" aria-hidden="true" role="presentation" focusable="false" style="display: inline-block; height: 32px; width: 32px; fill: #222;">
                                     <path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path>
@@ -885,21 +1069,21 @@
                                 <span>4.96</span>
                             </div>
                         </div>
-                        <p class="propertyinfo">Individual Host</p>
-                        <p class="propertyinfo">1-6 Mar</p>
-                        <a href="" class="propertyprice"><strong>£351</strong> total</a>
+                        <p class="property-info">Individual Host</p>
+                        <p class="property-info">1-6 Mar</p>
+                        <a href="" class="property-price"><strong>£351</strong> total</a>
                     </div>
                 </div>
-                <div class="propertycard">
-                    <button class="favouriteheart">
+                <div class="property-card">
+                    <button class="favourite-heart">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 56px; width: 56px; stroke: var(--f-mkcy-f); stroke-width: 2; overflow: visible; stroke: #fff;">
                             <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
                         </svg>
                     </button>
                     <img src="https://a0.muscache.com/im/pictures/47ce72c9-53e6-4e7d-a13f-36b610d4b72b.jpg?im_w=720">
-                    <div class="propertycardcontainer">
-                        <div class="propertycardheading">
-                            <p class="propertyheading">Puncheston, UK</p>
+                    <div class="property-card-container">
+                        <div class="property-card-heading">
+                            <p class="property-heading">Puncheston, UK</p>
                             <div class="rating">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 34 34" aria-hidden="true" role="presentation" focusable="false" style="display: inline-block; height: 32px; width: 32px; fill: #222;">
                                     <path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path>
@@ -907,22 +1091,22 @@
                                 <span>4.83</span>
                             </div>
                         </div>
-                        <p class="propertyinfo">Professional Host</p>
-                        <p class="propertyinfo">15-20 Apr</p>
-                        <a href="" class="propertyprice"><strong>£520</strong> total</a>
+                        <p class="property-info">Professional Host</p>
+                        <p class="property-info">15-20 Apr</p>
+                        <a href="" class="property-price"><strong>£520</strong> total</a>
                     </div>
                 </div>
-                <div class="propertycard">
-                    <button class="guestfavourite">Guest favourite</button>
-                    <button class="favouriteheart">
+                <div class="property-card">
+                    <button class="guest-favourite">Guest favourite</button>
+                    <button class="favourite-heart">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 56px; width: 56px; stroke: var(--f-mkcy-f); stroke-width: 2; overflow: visible; stroke: #fff;">
                             <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
                         </svg>
                     </button>
                     <img src="https://a0.muscache.com/im/pictures/5ae3aa22-8be4-414f-91a8-1f5a14f69c26.jpg?im_w=720">
-                    <div class="propertycardcontainer">
-                        <div class="propertycardheading">
-                            <p class="propertyheading">Guestling, UK</p>
+                    <div class="property-card-container">
+                        <div class="property-card-heading">
+                            <p class="property-heading">Guestling, UK</p>
                             <div class="rating">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 34 34" aria-hidden="true" role="presentation" focusable="false" style="display: inline-block; height: 32px; width: 32px; fill: #222;">
                                     <path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path>
@@ -930,22 +1114,22 @@
                                 <span>4.95</span>
                             </div>
                         </div>
-                        <p class="propertyinfo">Individual Host</p>
-                        <p class="propertyinfo">19-24 Jan</p>
-                        <a href="" class="propertyprice"><strong>£357</strong> total</a>
+                        <p class="property-info">Individual Host</p>
+                        <p class="property-info">19-24 Jan</p>
+                        <a href="" class="property-price"><strong>£357</strong> total</a>
                     </div>
                 </div>
-                <div class="propertycard">
-                    <button class="guestfavourite">Guest favourite</button>
-                    <button class="favouriteheart">
+                <div class="property-card">
+                    <button class="guest-favourite">Guest favourite</button>
+                    <button class="favourite-heart">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 56px; width: 56px; stroke: var(--f-mkcy-f); stroke-width: 2; overflow: visible; stroke: #fff;">
                             <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
                         </svg>
                     </button>
                     <img src="https://a0.muscache.com/im/pictures/airflow/Hosting-10454498/original/0bb58361-5eaa-445d-8d51-0a0fde6c887e.jpg?im_w=720">
-                    <div class="propertycardcontainer">
-                        <div class="propertycardheading">
-                            <p class="propertyheading">Great Dunmow, UK</p>
+                    <div class="property-card-container">
+                        <div class="property-card-heading">
+                            <p class="property-heading">Great Dunmow, UK</p>
                             <div class="rating">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 34 34" aria-hidden="true" role="presentation" focusable="false" style="display: inline-block; height: 32px; width: 32px; fill: #222;">
                                     <path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path>
@@ -953,38 +1137,38 @@
                                 <span>4.96</span>
                             </div>
                         </div>
-                        <p class="propertyinfo">Individual Host</p>
-                        <p class="propertyinfo">17-22 Apr</p>
-                        <a href="" class="propertyprice"><strong>£825</strong> total</a>
+                        <p class="property-info">Individual Host</p>
+                        <p class="property-info">17-22 Apr</p>
+                        <a href="" class="property-price"><strong>£825</strong> total</a>
                     </div>
                 </div>
-                <div class="propertycard">
-                    <button class="favouriteheart">
+                <div class="property-card">
+                    <button class="favourite-heart">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 56px; width: 56px; stroke: var(--f-mkcy-f); stroke-width: 2; overflow: visible; stroke: #fff;">
                             <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
                         </svg>
                     </button>
                     <img src="https://a0.muscache.com/im/pictures/prohost-api/Hosting-36548486/original/bbd36a3e-1740-4520-9440-92955918871b.jpeg?im_w=720">
-                    <div class="propertycardcontainer">
-                        <div class="propertycardheading">
-                            <p class="propertyheading">Stelling Minnis, UK</p>
+                    <div class="property-card-container">
+                        <div class="property-card-heading">
+                            <p class="property-heading">Stelling Minnis, UK</p>
                         </div>
-                        <p class="propertyinfo">Professional Host</p>
-                        <p class="propertyinfo">26-31 Jan</p>
-                        <a href="" class="propertyprice"><strong>£976</strong> total</a>
+                        <p class="property-info">Professional Host</p>
+                        <p class="property-info">26-31 Jan</p>
+                        <a href="" class="property-price"><strong>£976</strong> total</a>
                     </div>
                 </div>
-                <div class="propertycard">
-                    <button class="guestfavourite">Guest favourite</button>
-                    <button class="favouriteheart">
+                <div class="property-card">
+                    <button class="guest-favourite">Guest favourite</button>
+                    <button class="favourite-heart">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 56px; width: 56px; stroke: var(--f-mkcy-f); stroke-width: 2; overflow: visible; stroke: #fff;">
                             <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
                         </svg>
                     </button>
                     <img src="https://a0.muscache.com/im/pictures/73dfe7f7-3b62-4038-9964-03781ef16aac.jpg?im_w=720">
-                    <div class="propertycardcontainer">
-                        <div class="propertycardheading">
-                            <p class="propertyheading">Colgate, UK</p>
+                    <div class="property-card-container">
+                        <div class="property-card-heading">
+                            <p class="property-heading">Colgate, UK</p>
                             <div class="rating">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 34 34" aria-hidden="true" role="presentation" focusable="false" style="display: inline-block; height: 32px; width: 32px; fill: #222;">
                                     <path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path>
@@ -992,21 +1176,21 @@
                                 <span>4.92</span>
                             </div>
                         </div>
-                        <p class="propertyinfo">Individual Host</p>
-                        <p class="propertyinfo">1-6 Apr</p>
-                        <a href="" class="propertyprice"><strong>£685</strong> total</a>
+                        <p class="property-info">Individual Host</p>
+                        <p class="property-info">1-6 Apr</p>
+                        <a href="" class="property-price"><strong>£685</strong> total</a>
                     </div>
                 </div>
-                <div class="propertycard">
-                    <button class="favouriteheart">
+                <div class="property-card">
+                    <button class="favourite-heart">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 56px; width: 56px; stroke: var(--f-mkcy-f); stroke-width: 2; overflow: visible; stroke: #fff;">
                             <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
                         </svg>
                     </button>
                     <img src="https://a0.muscache.com/im/pictures/620a2886-d950-4c40-b584-c850ad7ed328.jpg?im_w=720">
-                    <div class="propertycardcontainer">
-                        <div class="propertycardheading">
-                            <p class="propertyheading">Scotland, UK</p>
+                    <div class="property-card-container">
+                        <div class="property-card-heading">
+                            <p class="property-heading">Scotland, UK</p>
                             <div class="rating">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 34 34" aria-hidden="true" role="presentation" focusable="false" style="display: inline-block; height: 32px; width: 32px; fill: #222;">
                                     <path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path>
@@ -1014,22 +1198,22 @@
                                 <span>4.83</span>
                             </div>
                         </div>
-                        <p class="propertyinfo">Professional Host</p>
-                        <p class="propertyinfo">29 Jan - 3 Feb</p>
-                        <a href="" class="propertyprice"><strong>£1,666</strong> total</a>
+                        <p class="property-info">Professional Host</p>
+                        <p class="property-info">29 Jan - 3 Feb</p>
+                        <a href="" class="property-price"><strong>£1,666</strong> total</a>
                     </div>
                 </div>
-                <div class="propertycard">
-                    <button class="guestfavourite">Guest favourite</button>
-                    <button class="favouriteheart">
+                <div class="property-card">
+                    <button class="guest-favourite">Guest favourite</button>
+                    <button class="favourite-heart">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 56px; width: 56px; stroke: var(--f-mkcy-f); stroke-width: 2; overflow: visible; stroke: #fff;">
                             <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
                         </svg>
                     </button>
                     <img src="https://a0.muscache.com/im/pictures/78d95dd2-6644-4ecc-986c-2337c8143bfe.jpg?im_w=720">
-                    <div class="propertycardcontainer">
-                        <div class="propertycardheading">
-                            <p class="propertyheading">Laugharne, UK</p>
+                    <div class="property-card-container">
+                        <div class="property-card-heading">
+                            <p class="property-heading">Laugharne, UK</p>
                             <div class="rating">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 34 34" aria-hidden="true" role="presentation" focusable="false" style="display: inline-block; height: 32px; width: 32px; fill: #222;">
                                     <path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path>
@@ -1037,22 +1221,22 @@
                                 <span>4.98</span>
                             </div>
                         </div>
-                        <p class="propertyinfo">Individual Host</p>
-                        <p class="propertyinfo">1-6 Apr</p>
-                        <a href="" class="propertyprice"><strong>£509</strong> total</a>
+                        <p class="property-info">Individual Host</p>
+                        <p class="property-info">1-6 Apr</p>
+                        <a href="" class="property-price"><strong>£509</strong> total</a>
                     </div>
                 </div>
-                <div class="propertycard">
-                    <button class="guestfavourite">Guest favourite</button>
-                    <button class="favouriteheart">
+                <div class="property-card">
+                    <button class="guest-favourite">Guest favourite</button>
+                    <button class="favourite-heart">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 56px; width: 56px; stroke: var(--f-mkcy-f); stroke-width: 2; overflow: visible; stroke: #fff;">
                             <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
                         </svg>
                     </button>
                     <img src="https://a0.muscache.com/im/pictures/miso/Hosting-713793474951553871/original/2ac03203-3d06-441c-bc82-77f28ac26c6a.jpeg?im_w=720">
-                    <div class="propertycardcontainer">
-                        <div class="propertycardheading">
-                            <p class="propertyheading">Brålanda, Sweden</p>
+                    <div class="property-card-container">
+                        <div class="property-card-heading">
+                            <p class="property-heading">Brålanda, Sweden</p>
                             <div class="rating">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 34 34" aria-hidden="true" role="presentation" focusable="false" style="display: inline-block; height: 32px; width: 32px; fill: #222;">
                                     <path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path>
@@ -1060,22 +1244,22 @@
                                 <span>4.98</span>
                             </div>
                         </div>
-                        <p class="propertyinfo">Professional Host</p>
-                        <p class="propertyinfo">17-22 Jan</p>
-                        <a href="" class="propertyprice"><strong>£1,926</strong> total</a>
+                        <p class="property-info">Professional Host</p>
+                        <p class="property-info">17-22 Jan</p>
+                        <a href="" class="property-price"><strong>£1,926</strong> total</a>
                     </div>
                 </div>
-                <div class="propertycard">
-                    <button class="guestfavourite">Guest favourite</button>
-                    <button class="favouriteheart">
+                <div class="property-card">
+                    <button class="guest-favourite">Guest favourite</button>
+                    <button class="favourite-heart">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 56px; width: 56px; stroke: var(--f-mkcy-f); stroke-width: 2; overflow: visible; stroke: #fff;">
                             <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
                         </svg>
                     </button>
                     <img src="https://a0.muscache.com/im/pictures/miso/Hosting-46695796/original/a0965aa5-3907-466e-b727-0900e2a7e8c7.jpeg?im_w=720">
-                    <div class="propertycardcontainer">
-                        <div class="propertycardheading">
-                            <p class="propertyheading">Lac-Beauport, Canada</p>
+                    <div class="property-card-container">
+                        <div class="property-card-heading">
+                            <p class="property-heading">Lac-Beauport, Canada</p>
                             <div class="rating">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 34 34" aria-hidden="true" role="presentation" focusable="false" style="display: inline-block; height: 32px; width: 32px; fill: #222;">
                                     <path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path>
@@ -1083,22 +1267,22 @@
                                 <span>4.98</span>
                             </div>
                         </div>
-                        <p class="propertyinfo">Professional Host</p>
-                        <p class="propertyinfo">30 Jan - 4 Feb</p>
-                        <a href="" class="propertyprice"><strong>£1,577</strong> total</a>
+                        <p class="property-info">Professional Host</p>
+                        <p class="property-info">30 Jan - 4 Feb</p>
+                        <a href="" class="property-price"><strong>£1,577</strong> total</a>
                     </div>
                 </div>
-                <div class="propertycard">
-                    <button class="guestfavourite">Guest favourite</button>
-                    <button class="favouriteheart">
+                <div class="property-card">
+                    <button class="guest-favourite">Guest favourite</button>
+                    <button class="favourite-heart">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 56px; width: 56px; stroke: var(--f-mkcy-f); stroke-width: 2; overflow: visible; stroke: #fff;">
                             <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
                         </svg>
                     </button>
                     <img src="https://a0.muscache.com/im/pictures/6721fc25-afe0-4f35-b181-212ec8ddc186.jpg?im_w=720">
-                    <div class="propertycardcontainer">
-                        <div class="propertycardheading">
-                            <p class="propertyheading">Gaular, Norway</p>
+                    <div class="property-card-container">
+                        <div class="property-card-heading">
+                            <p class="property-heading">Gaular, Norway</p>
                             <div class="rating">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 34 34" aria-hidden="true" role="presentation" focusable="false" style="display: inline-block; height: 32px; width: 32px; fill: #222;">
                                     <path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path>
@@ -1106,21 +1290,21 @@
                                 <span>4.96</span>
                             </div>
                         </div>
-                        <p class="propertyinfo">Professional Host</p>
-                        <p class="propertyinfo">16-21 Jan</p>
-                        <a href="" class="propertyprice"><strong>£1,334</strong> total</a>
+                        <p class="property-info">Professional Host</p>
+                        <p class="property-info">16-21 Jan</p>
+                        <a href="" class="property-price"><strong>£1,334</strong> total</a>
                     </div>
                 </div>
-                <div class="propertycard">
-                    <button class="favouriteheart">
+                <div class="property-card">
+                    <button class="favourite-heart">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 56px; width: 56px; stroke: var(--f-mkcy-f); stroke-width: 2; overflow: visible; stroke: #fff;">
                             <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
                         </svg>
                     </button>
                     <img src="https://a0.muscache.com/im/pictures/prohost-api/Hosting-755137040389728919/original/76cef7cb-ddd0-4925-807f-6fb6f117a278.jpeg?im_w=720">
-                    <div class="propertycardcontainer">
-                        <div class="propertycardheading">
-                            <p class="propertyheading">Joshua Tree, California, US</p>
+                    <div class="property-card-container">
+                        <div class="property-card-heading">
+                            <p class="property-heading">Joshua Tree, California, US</p>
                             <div class="rating">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 34 34" aria-hidden="true" role="presentation" focusable="false" style="display: inline-block; height: 32px; width: 32px; fill: #222;">
                                     <path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path>
@@ -1128,22 +1312,22 @@
                                 <span>4.85</span>
                             </div>
                         </div>
-                        <p class="propertyinfo">Professional Host</p>
-                        <p class="propertyinfo">28 Jan - 2 Feb</p>
-                        <a href="" class="propertyprice"><strong>£11,299</strong> total</a>
+                        <p class="property-info">Professional Host</p>
+                        <p class="property-info">28 Jan - 2 Feb</p>
+                        <a href="" class="property-price"><strong>£11,299</strong> total</a>
                     </div>
                 </div>
-                <div class="propertycard">
-                    <button class="guestfavourite">Guest favourite</button>
-                    <button class="favouriteheart">
+                <div class="property-card">
+                    <button class="guest-favourite">Guest favourite</button>
+                    <button class="favourite-heart">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 56px; width: 56px; stroke: var(--f-mkcy-f); stroke-width: 2; overflow: visible; stroke: #fff;">
                             <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
                         </svg>
                     </button>
                     <img src="https://a0.muscache.com/im/pictures/8efb200c-6dcb-460d-a367-caa511506077.jpg?im_w=720">
-                    <div class="propertycardcontainer">
-                        <div class="propertycardheading">
-                            <p class="propertyheading">Stege, Denmark</p>
+                    <div class="property-card-container">
+                        <div class="property-card-heading">
+                            <p class="property-heading">Stege, Denmark</p>
                             <div class="rating">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 34 34" aria-hidden="true" role="presentation" focusable="false" style="display: inline-block; height: 32px; width: 32px; fill: #222;">
                                     <path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path>
@@ -1151,21 +1335,21 @@
                                 <span>5.0</span>
                             </div>
                         </div>
-                        <p class="propertyinfo">Individual Host</p>
-                        <p class="propertyinfo">2-7 Mar</p>
-                        <a href="" class="propertyprice"><strong>£1,092</strong> total</a>
+                        <p class="property-info">Individual Host</p>
+                        <p class="property-info">2-7 Mar</p>
+                        <a href="" class="property-price"><strong>£1,092</strong> total</a>
                     </div>
                 </div>
-                <div class="propertycard">
-                    <button class="favouriteheart">
+                <div class="property-card">
+                    <button class="favourite-heart">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 56px; width: 56px; stroke: var(--f-mkcy-f); stroke-width: 2; overflow: visible; stroke: #fff;">
                             <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
                         </svg>
                     </button>
                     <img src="https://a0.muscache.com/im/pictures/2d8fd134-8d7c-4b69-a37e-17558908c426.jpg?im_w=720">
-                    <div class="propertycardcontainer">
-                        <div class="propertycardheading">
-                            <p class="propertyheading">San Roque de Barva, Costa Rica</p>
+                    <div class="property-card-container">
+                        <div class="property-card-heading">
+                            <p class="property-heading">San Roque de Barva, Costa Rica</p>
                             <div class="rating">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 34 34" aria-hidden="true" role="presentation" focusable="false" style="display: inline-block; height: 32px; width: 32px; fill: #222;">
                                     <path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path>
@@ -1173,21 +1357,21 @@
                                 <span>4.86</span>
                             </div>
                         </div>
-                        <p class="propertyinfo">Individual Host</p>
-                        <p class="propertyinfo">29 Jan - 3 Feb</p>
-                        <a href="" class="propertyprice"><strong>£1,537</strong> total</a>
+                        <p class="property-info">Individual Host</p>
+                        <p class="property-info">29 Jan - 3 Feb</p>
+                        <a href="" class="property-price"><strong>£1,537</strong> total</a>
                     </div>
                 </div>
-                <div class="propertycard">
-                    <button class="favouriteheart">
+                <div class="property-card">
+                    <button class="favourite-heart">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 56px; width: 56px; stroke: var(--f-mkcy-f); stroke-width: 2; overflow: visible; stroke: #fff;">
                             <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
                         </svg>
                     </button>
                     <img src="https://a0.muscache.com/im/pictures/1f6c495e-b877-4a48-9f2c-d8012f640166.jpg?im_w=720">
-                    <div class="propertycardcontainer">
-                        <div class="propertycardheading">
-                            <p class="propertyheading">Joshua Tree, California, US</p>
+                    <div class="property-card-container">
+                        <div class="property-card-heading">
+                            <p class="property-heading">Joshua Tree, California, US</p>
                             <div class="rating">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 34 34" aria-hidden="true" role="presentation" focusable="false" style="display: inline-block; height: 32px; width: 32px; fill: #222;">
                                     <path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path>
@@ -1195,22 +1379,22 @@
                                 <span>5.0</span>
                             </div>
                         </div>
-                        <p class="propertyinfo">Individual Host</p>
-                        <p class="propertyinfo">29 Jan - 3 Feb</p>
-                        <a href="" class="propertyprice"><strong>£23,736</strong> total</a>
+                        <p class="property-info">Individual Host</p>
+                        <p class="property-info">29 Jan - 3 Feb</p>
+                        <a href="" class="property-price"><strong>£23,736</strong> total</a>
                     </div>
                 </div>
-                <div class="propertycard">
-                    <button class="guestfavourite">Guest favourite</button>
-                    <button class="favouriteheart">
+                <div class="property-card">
+                    <button class="guest-favourite">Guest favourite</button>
+                    <button class="favourite-heart">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 56px; width: 56px; stroke: var(--f-mkcy-f); stroke-width: 2; overflow: visible; stroke: #fff;">
                             <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
                         </svg>
                     </button>
                     <img src="https://a0.muscache.com/im/pictures/1bd12dfa-f681-4979-b805-b0c7b6b5511c.jpg?im_w=720">
-                    <div class="propertycardcontainer">
-                        <div class="propertycardheading">
-                            <p class="propertyheading">Salobreña, Spain</p>
+                    <div class="property-card-container">
+                        <div class="property-card-heading">
+                            <p class="property-heading">Salobreña, Spain</p>
                             <div class="rating">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 34 34" aria-hidden="true" role="presentation" focusable="false" style="display: inline-block; height: 32px; width: 32px; fill: #222;">
                                     <path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path>
@@ -1218,22 +1402,22 @@
                             <span>4.93</span>
                             </div>
                         </div>
-                        <p class="propertyinfo">Individual Host</p>
-                        <p class="propertyinfo">19-24 Feb</p>
-                        <a href="" class="propertyprice"><strong>£2,536</strong> total</a>
+                        <p class="property-info">Individual Host</p>
+                        <p class="property-info">19-24 Feb</p>
+                        <a href="" class="property-price"><strong>£2,536</strong> total</a>
                     </div>
                 </div>
-                <div class="propertycard">
-                    <button class="guestfavourite">Guest favourite</button>
-                    <button class="favouriteheart">
+                <div class="property-card">
+                    <button class="guest-favourite">Guest favourite</button>
+                    <button class="favourite-heart">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 56px; width: 56px; stroke: var(--f-mkcy-f); stroke-width: 2; overflow: visible; stroke: #fff;">
                             <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
                         </svg>
                     </button>
                     <img src="https://a0.muscache.com/im/pictures/d1469e5f-7ad1-4f47-8a92-aed6c5fa5fb1.jpg?im_w=720">
-                    <div class="propertycardcontainer">
-                        <div class="propertycardheading">
-                            <p class="propertyheading">Austin, Texas, US</p>
+                    <div class="property-card-container">
+                        <div class="property-card-heading">
+                            <p class="property-heading">Austin, Texas, US</p>
                             <div class="rating">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 34 34" aria-hidden="true" role="presentation" focusable="false" style="display: inline-block; height: 32px; width: 32px; fill: #222;">
                                     <path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path>
@@ -1241,22 +1425,22 @@
                                 <span>4.93</span>
                             </div>
                         </div>
-                        <p class="propertyinfo">Professional Host</p>
-                        <p class="propertyinfo">4-9 Feb</p>
-                        <a href="" class="propertyprice"><strong>£2,342</strong> total</a>
+                        <p class="property-info">Professional Host</p>
+                        <p class="property-info">4-9 Feb</p>
+                        <a href="" class="property-price"><strong>£2,342</strong> total</a>
                     </div>
                 </div>
-                <div class="propertycard">
-                    <button class="guestfavourite">Guest favourite</button>
-                    <button class="favouriteheart">
+                <div class="property-card">
+                    <button class="guest-favourite">Guest favourite</button>
+                    <button class="favourite-heart">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 56px; width: 56px; stroke: var(--f-mkcy-f); stroke-width: 2; overflow: visible; stroke: #fff;">
                             <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
                         </svg>
                     </button>
                     <img src="https://a0.muscache.com/im/pictures/be42241a-5346-4745-a2ef-8cf7576f88b8.jpg?im_w=720">
-                    <div class="propertycardcontainer">
-                        <div class="propertycardheading">
-                            <p class="propertyheading">Harlingen, Netherlands</p>
+                    <div class="property-card-container">
+                        <div class="property-card-heading">
+                            <p class="property-heading">Harlingen, Netherlands</p>
                             <div class="rating">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 34 34" aria-hidden="true" role="presentation" focusable="false" style="display: inline-block; height: 32px; width: 32px; fill: #222;">
                                     <path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path>
@@ -1264,22 +1448,22 @@
                                 <span>4.99</span>
                             </div>
                         </div>
-                        <p class="propertyinfo">Professional Host</p>
-                        <p class="propertyinfo">29 Jan - 3 Feb</p>
-                        <a href="" class="propertyprice"><strong>£1,639</strong> total</a>
+                        <p class="property-info">Professional Host</p>
+                        <p class="property-info">29 Jan - 3 Feb</p>
+                        <a href="" class="property-price"><strong>£1,639</strong> total</a>
                     </div>
                 </div>
-                <div class="propertycard">
-                    <button class="guestfavourite">Guest favourite</button>
-                    <button class="favouriteheart">
+                <div class="property-card">
+                    <button class="guest-favourite">Guest favourite</button>
+                    <button class="favourite-heart">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: rgba(0, 0, 0, 0.5); height: 56px; width: 56px; stroke: var(--f-mkcy-f); stroke-width: 2; overflow: visible; stroke: #fff;">
                             <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
                         </svg>
                     </button>
                     <img src="https://a0.muscache.com/im/pictures/miso/Hosting-21409981/original/a8fa243d-dac8-4238-93e5-f7aa33072ff8.jpeg?im_w=720">
-                    <div class="propertycardcontainer">
-                        <div class="propertycardheading">
-                            <p class="propertyheading">Rhinebeck, New York, US</p>
+                    <div class="property-card-container">
+                        <div class="property-card-heading">
+                            <p class="property-heading">Rhinebeck, New York, US</p>
                             <div class="rating">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 34 34" aria-hidden="true" role="presentation" focusable="false" style="display: inline-block; height: 32px; width: 32px; fill: #222;">
                                     <path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path>
@@ -1287,18 +1471,18 @@
                                 <span>4.91</span>
                             </div>
                         </div>
-                        <p class="propertyinfo">Individual Host</p>
-                        <p class="propertyinfo">9-14 Mar</p>
-                        <a href="" class="propertyprice"><strong>£2,361</strong> total</a>
+                        <p class="property-info">Individual Host</p>
+                        <p class="property-info">9-14 Mar</p>
+                        <a href="" class="property-price"><strong>£2,361</strong> total</a>
                     </div>
                 </div>
                 <h3>Continue exploring OMG! homes</h3>
-                <button class="showmore">Show more</button>
+                <button class="show-more">Show more</button>
             </section>
-            <section id="futuregetaways">
+            <section id="future-getaways">
                 <h2>Inspiration for future getaways</h2>
-                <div class="scrollmenu2">
-                    <a id="selectedlink" href="">Popular</a>
+                <div class="scroll-menu-2">
+                    <a id="selected-link" href="">Popular</a>
                     <a href="">Historic</a>
                     <a href="">Coastal</a>
                     <a href="">Islands</a>
@@ -1307,52 +1491,52 @@
                     <a href="">Categories</a>
                     <a href="">Things to do</a>
                 </div>
-                <button class="nextarrow">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-35 -170 32 32" aria-label="scroll tabs forward" role="img" focusable="false" style="display: block; fill: none; height: 36px; width: 36px; stroke: currentcolor; stroke-width: 3; overflow: visible;">
+                <button class="next-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-35 -175 32 32" aria-label="scroll tabs forward" role="img" focusable="false" style="display: block; fill: none; height: 36px; width: 36px; stroke: currentcolor; stroke-width: 3; overflow: visible;">
                         <path fill="none" d="m12 4 11.3 11.3a1 1 0 0 1 0 1.4L12 28"></path>
                     </svg>
                 </button>
                 <hr>
-                <div class="locationlinks">
+                <div class="location-links">
                     <a href="">
-                        <p class="locationtitle">Aberfeldy</p>
-                        <p class="rentaltype">Holiday rentals</p>
+                        <p class="location-title">Aberfeldy</p>
+                        <p class="rental-type">Holiday rentals</p>
                     </a>
                     <a href="">
-                        <p class="locationtitle">Amsterdam</p>
-                        <p class="rentaltype">Holiday rentals</p>
+                        <p class="location-title">Amsterdam</p>
+                        <p class="rental-type">Holiday rentals</p>
                     </a>
                     <a href="">
-                        <p class="locationtitle">Athens</p>
-                        <p class="rentaltype">Rentals with pools</p>
+                        <p class="location-title">Athens</p>
+                        <p class="rental-type">Rentals with pools</p>
                     </a>
                     <a href="">
-                        <p class="locationtitle">Aviemore</p>
-                        <p class="rentaltype">Flat rentals</p>
+                        <p class="location-title">Aviemore</p>
+                        <p class="rental-type">Flat rentals</p>
                     </a>
                     <a href="">
-                        <p class="locationtitle">Bakewell</p>
-                        <p class="rentaltype">Cottage rentals</p>
+                        <p class="location-title">Bakewell</p>
+                        <p class="rental-type">Cottage rentals</p>
                     </a>
                     <a href="">
-                        <p class="locationtitle">Barcelona</p>
-                        <p class="rentaltype">Flat rentals</p>
+                        <p class="location-title">Barcelona</p>
+                        <p class="rental-type">Flat rentals</p>
                     </a>
                     <a href="">
-                        <p class="locationtitle">Bath</p>
-                        <p class="rentaltype">Flat rentals</p>
+                        <p class="location-title">Bath</p>
+                        <p class="rental-type">Flat rentals</p>
                     </a>
-                    <button class="showmore2">
+                    <button class="show-more-2">
                         <span>Show more</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="223 -65 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 28px; width: 28px; stroke: currentcolor; stroke-width: 5.33333; overflow: visible;">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="220 10 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 28px; width: 28px; stroke: currentcolor; stroke-width: 5.33333; overflow: visible;">
                             <path fill="none" d="M28 12 16.7 23.3a1 1 0 0 1-1.4 0L4 12"></path>
                         </svg>
                     </button>
                 </div>
             </section>
             <hr>
-            <section id="supporthostingairbnb">
-                <p class="linksheading">Support</p>
+            <section id="support-hosting-airbnb">
+                <p class="links-heading">Support</p>
                 <div class="links">
                     <a href="">Help Centre</a><br>
                     <a href="">AirCover</a><br>
@@ -1362,7 +1546,7 @@
                     <a href="">Report neighbourhood concern</a>
                 </div>
                 <hr>
-                <p class="linksheading">Hosting</p>
+                <p class="links-heading">Hosting</p>
                 <div class="links">
                     <a href="">Airbnb your home</a><br>
                     <a href="">AirCover for Hosts</a><br>
@@ -1371,7 +1555,7 @@
                     <a href="">Hosting responsibly</a><br>
                 </div>
                 <hr>
-                <p class="linksheading">Airbnb</p>
+                <p class="links-heading">Airbnb</p>
                 <div class="links">
                     <a href="">Newsroom</a><br>
                     <a href="">New features</a><br>
@@ -1384,22 +1568,22 @@
             </section>
         </main>
         <footer>
-            <button class="languagebutton">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 32px; width: 32px; fill: currentcolor;">
+            <button class="language-button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 36px; width: 36px; fill: currentcolor;">
                     <path d="M8 .25a7.77 7.77 0 0 1 7.75 7.78 7.75 7.75 0 0 1-7.52 7.72h-.25A7.75 7.75 0 0 1 .25 8.24v-.25A7.75 7.75 0 0 1 8 .25zm1.95 8.5h-3.9c.15 2.9 1.17 5.34 1.88 5.5H8c.68 0 1.72-2.37 1.93-5.23zm4.26 0h-2.76c-.09 1.96-.53 3.78-1.18 5.08A6.26 6.26 0 0 0 14.17 9zm-9.67 0H1.8a6.26 6.26 0 0 0 3.94 5.08 12.59 12.59 0 0 1-1.16-4.7l-.03-.38zm1.2-6.58-.12.05a6.26 6.26 0 0 0-3.83 5.03h2.75c.09-1.83.48-3.54 1.06-4.81zm2.25-.42c-.7 0-1.78 2.51-1.94 5.5h3.9c-.15-2.9-1.18-5.34-1.89-5.5h-.07zm2.28.43.03.05a12.95 12.95 0 0 1 1.15 5.02h2.75a6.28 6.28 0 0 0-3.93-5.07z"></path>
                 </svg>
                 <span>English (GB)</span>
             </button>
-            <button class="currencybutton">
+            <button class="currency-button">
                 <span>£</span>
                 <span>GBP</span>
             </button>
-            <div class="copyright">© 2024 Airbnb, Inc.</div>
-            <div class="footerlinks">
-                <a href="">Privacy <span class="dot2">•</span></a>
-                <a href="">Terms <span class="dot2">•</span></a>
-                <a href="">Sitemap <span class="dot2">•</span></a>
-                <a href="">UK Modern Slavery Act <span class="dot2">•</span></a><br>
+            <div class="copyright"><span>©</span> 2024 Airbnb, Inc.</div>
+            <div class="footer-links">
+                <a href="">Privacy <span class="dot-2">•</span></a>
+                <a href="">Terms <span class="dot-2">•</span></a>
+                <a href="">Sitemap <span class="dot-2">•</span></a>
+                <a href="">UK Modern Slavery Act <span class="dot-2">•</span></a><br>
                 <a href="">Company details</a>
             </div>
         </footer>
