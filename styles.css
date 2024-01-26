@@ -535,13 +535,13 @@ footer {
     font-size: 32px;
     color: #222;
     text-align: left;
-    padding: 15px 0px 15px 100px;
+    padding: 15px 0px 15px 108px;
     position: relative;
 }
 
 .language-button svg {
     position: absolute;
-    top:  20px;
+    top:  18px;
     left: 53px;
 }
 
@@ -553,12 +553,17 @@ footer {
     font-size: 32px;
     color: #222;
     text-align: left;
-    padding: 15px 0px 50px 50px;
+    word-spacing: 6px;
+    padding: 15px 0px 50px 55px;
     position: relative;
 }
 
 .copyright {
     padding-left: 55px;
+}
+
+.copyright span {
+    font-size: 13px;
 }
 
 .footer-links {
