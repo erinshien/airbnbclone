@@ -199,7 +199,7 @@ a {
 
 .selected-property {
     background:linear-gradient(#222,#222) bottom no-repeat;
-    background-size: 46% 4.5px;
+    background-size: 47.5% 4.5px;
     padding-bottom: 36px;
 }
 
@@ -323,14 +323,18 @@ h3 {
     font-weight: 600;
     color: #222;
     text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
 }
 
 .show-more {
     margin: auto;
+    margin-bottom: 16px;
     height: 110px;
     width:  300px;
     background-color: #222;
     color: #fff;
+    border: 0;
     border-radius: 20px;
     font-size: 36px;
 }
@@ -512,7 +516,7 @@ hr {
 footer {
     background-color: rgba(247, 247, 247);
     padding-top:     35px;
-    padding-bottom: 155px;
+    padding-bottom: 100px;
 }
 
 .language-button {
