@@ -446,16 +446,22 @@ h2 {
 }
 
 .show-more-2 {
-    border: 0;
-    background-color: transparent;
+    border: 0px;
+    background-color: rgba(247, 247, 247);
     font-family: 'AirbnbCereal';
     font-weight: 600;
     font-size: 32px;
     color: #222;
     text-align: left;
-    margin-left: -8px;
-    margin-top: -65px;
+    padding-top: 15px;
+    padding-left: 0;
+    display: flex;
     position: relative;
+}
+
+.show-more-2 span {
+    justify-content: start;
+    align-items: start;
 }
 
 .location-links svg {
